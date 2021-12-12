@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 0px 70px;
+}
+
+.NavbarLogo{
+    width: 150px;
+    height: 70px;
+}
+
+.NavbarLinks{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+
+.NavbarLinks li a{
+    display: block;
+    text-decoration: none;
+    color: #444;
+    padding: 20px 20px;
+    font-weight: 700;
+    transition: 0.4s all;
+}
+
+.NavbarLinks li.NavbarDropdown{
+    position: relative;
+}
+
+.NavbarLinks li.NavbarDropdown:hover .dropDown{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.NavbarLinks li.NavbarDropdown .dropDown{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 20px 0;
+    top: 100%;
+    transform: translateY(50px);
+    left: 0;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 111;
+    transition: 0.4s all;
+}
+
+.NavbarLinks li.NavbarDropdown .dropDown a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.NavbarDropdown .dropDown a:hover{
+    padding-left: 30px;
+}
+
+.NavbarLinks li a:hover{
+    color: #296EB4;
+}
+
+.NavbarDropdown{
+    font-size: 18px;
+}
+
+.logoutButton{
+    /* width: 80px; */
+    padding: 5px 10px;
+    border-radius: 10px;
+    /* height: 35px; */
+    background-color: #eb924e;
+    border: none;
+    color: white;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    position: fixed;
+    right: 5%;
+}
+
+.logoutButton:hover{
+    background-color: white;
+    border: 2px solid #eb924e;
+    color: #eb924e;
+}

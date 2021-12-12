@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.homepagetopdiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.homepagetopimage{
+    width: 40vw;
+    height: auto;
+}
+
+.homepagetoptext{
+    font-family: 'Lora', serif;
+    font-size: 100px;
+    font-weight: 800;
+}
+
+/* Vision CSS */
+.visiondiv{
+    min-height: 300px;
+    background-color: rgb(7, 7, 95);
+    padding: 40px;
+}
+
+.visionheading{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.visioncard{
+    width: 250px;
+    height: 200px; 
+    background-color: #eb924e;
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    font-weight: bold;
+}
+
+.visioncard:hover{
+    transform: scale(1.1);
+}
+
+.visioncarddiv{
+    display: flex;
+    justify-content: space-evenly;
+}
