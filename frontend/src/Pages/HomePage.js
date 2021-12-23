@@ -1,8 +1,10 @@
 import React from 'react'
 import NavComponent from '../Components/Navbar'
-import HomeImage from "../Assets/Images/homeTop.png"; 
 import AOS from 'aos';
 import "../Assets/CSS/HomePage.css";
+import "../Assets/CSS/Common.css";
+import Courses from '../Components/Courses';
+import Mentors from '../Components/Mentors';
 
 export default function HomePage() {
 
@@ -14,10 +16,30 @@ export default function HomePage() {
         <div>
             <NavComponent />
             <div className="homepagetopdiv">
-                <h1 className="homepagetoptext">Let's build <br /> your Career</h1>
-                <img className="homepagetopimage" src={HomeImage} alt="" />
+                <div className="homepagetopleft">
+                    <h1 className="homepagetoptext">Let's build <br /> your Career</h1>
+                </div>
+                <div className='visionBox'>
+                    <div className='visionDivOne'>
+                        <div className='visionCard orange blueText'>
+                            <p className='visionText'>Live <br /> Coding <br /> Classes</p>
+                        </div>
+                        <div className='visionCard blue orangeText'>
+                            <p className='visionText'>Mock <br /> Interviews</p>
+                        </div>
+                    </div>
+                    <div className='visionDivTwo'>
+                        <div className='visionCard blue orangeText'>
+                            <p className='visionText'>Live <br /> Aptitude <br /> Classes</p>
+                        </div>
+                        <div className='visionCard orange blueText'>
+                            <p className='visionText'>Mentorship <br /> in <br /> Developing <br /> Project</p>
+                        </div>
+                    </div>
+                </div>
+                {/* <img className="homepagetopimage" src={HomeImage} alt="" /> */}
             </div>
-            <div className="visiondiv">
+            {/* <div className="visiondiv">
                 <p data-aos="fade-up" className="visionheading">Our Vision</p>
                 <br />
                 <div className="visioncarddiv">
@@ -34,6 +56,12 @@ export default function HomePage() {
                     <p className="visiontext">Mentorship in Developing Project</p>
                 </div>
                 </div>
+    </div> */}
+            <div>
+                <Courses />
+            </div>
+            <div>
+                <Mentors />
             </div>
         </div>
     )

@@ -1,0 +1,14 @@
+.mentorImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.mentorMainHeading{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(7, 7, 95);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}

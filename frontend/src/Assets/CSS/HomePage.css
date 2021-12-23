@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 .homepagetopdiv{
     display: flex;
@@ -8,18 +9,27 @@
 }
 
 .homepagetopimage{
-    width: 40vw;
+    width: 35vw;
     height: auto;
 }
 
+.homepagetopleft{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
 .homepagetoptext{
-    font-family: 'Lora', serif;
+    /* font-family: 'Lora', serif; */
+    font-family: 'Poppins', sans-serif;
     font-size: 100px;
     font-weight: 800;
 }
 
 /* Vision CSS */
-.visiondiv{
+/* .visiondiv{
     min-height: 300px;
     background-color: rgb(7, 7, 95);
     padding: 40px;
@@ -54,4 +64,77 @@
 .visioncarddiv{
     display: flex;
     justify-content: space-evenly;
+}
+
+.homepagefeaturecard{
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(7, 7, 95);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+}
+
+.homepagefeaturecard:hover{
+        
+}
+
+.homepagefeaturecard p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.homepagefeature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+} */
+
+.visionBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visionDivOne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 10vw;
+}
+
+.visionDivTwo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visionCard{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.visionCard:hover{
+    transform: scale(1.1);
+}
+
+.visionText{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
 }
