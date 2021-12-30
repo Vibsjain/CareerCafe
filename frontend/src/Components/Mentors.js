@@ -1,82 +1,99 @@
-import React, { useState } from "react";
-import ScrollMenu from "react-horizontal-scrolling-menu";
+import React from "react";
 import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import User from "../Assets/Images/user.png";
 import "../Assets/CSS/Mentors.css";
 import "../Assets/CSS/Common.css";
 
 export default function Mentors() {
-  //   const [selected, setSelected] = useState("item1");
-
-  //   const Menu = (list, selected) =>
-  //     list.map((el) => {
-  //       const { name } = el;
-
-  //       return <MenuItem text={name} key={name} selected={selected} />;
-  //     });
-
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 3,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
+      items: 1,
+    },
   };
-
-  const list = [
-    { name: "item1" },
-    { name: "item2" },
-    { name: "item3" },
-    { name: "item4" },
-    { name: "item5" },
-    { name: "item6" },
-    { name: "item7" },
-    { name: "item8" },
-    { name: "item9" },
-  ];
-
-  //   const MenuItem = ({ text }) => {
-  //     return (
-  //       <div className="menu-item">{text}</div>
-  //     );
-  //   };
-
-  const Arrow = ({ text, className }) => {
-    return <div className={className}>{text}</div>;
-  };
-
-  const ArrowLeft = Arrow({ text: "<", className: "arrow-prev" });
-  const ArrowRight = Arrow({ text: ">", className: "arrow-next" });
-
-  //   const menu = Menu(list, selected);
-
-  //   const onSelect = (key) => {
-  //     setSelected(key);
-  //   }
 
   return (
     <div className="mentorOuterDiv">
       <p className="mentorMainHeading">Our Mentors</p>
-      <Carousel responsive={responsive} centerMode={true}>
-        <div>
-            <div>Item 1</div>
-            <div>Item 4</div>
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        autoPlay={true}
+        autoPlaySpeed={3000}
+        keyBoardControl={true}
+        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+        containerClass="carousel-container"
+      >
+        <div className="mentorCard">
+          <img className="mentorImage" src={User} alt="" />
+          <div className="mentorDetails">
+            <p className="mentorName">Sundar Pichai</p>
+            <p className="companyName">Google</p>
+          </div>
         </div>
-        <div>Item 2</div>
-        <div>Item 3</div>
-        <div>Item 4</div>
+        <div className="mentorCard">
+          <img className="mentorImage" src={User} alt="" />
+          <div className="mentorDetails">
+            <p className="mentorName">Aman Singh</p>
+            <p className="companyName">TCS</p>
+          </div>
+        </div>
+        <div className="mentorCard">
+          <img className="mentorImage" src={User} alt="" />
+          <div className="mentorDetails">
+            <p className="mentorName">Naman Bansal</p>
+            <p className="companyName">Microsoft</p>
+          </div>
+        </div>
+        <div className="mentorCard">
+          <img className="mentorImage" src={User} alt="" />
+          <div className="mentorDetails">
+            <p className="mentorName">Ayushi Verma</p>
+            <p className="companyName">Salesforce</p>
+          </div>
+        </div>
+        <div className="mentorCard">
+          <img className="mentorImage" src={User} alt="" />
+          <div className="mentorDetails">
+            <p className="mentorName">Naveen Yadav</p>
+            <p className="companyName">Google</p>
+          </div>
+        </div>
+        <div className="mentorCard">
+          <img className="mentorImage" src={User} alt="" />
+          <div className="mentorDetails">
+            <p className="mentorName">Sundar Pichai</p>
+            <p className="companyName">Google</p>
+          </div>
+        </div>
+        <div className="mentorCard">
+          <img className="mentorImage" src={User} alt="" />
+          <div className="mentorDetails">
+            <p className="mentorName">Sundar Pichai</p>
+            <p className="companyName">Google</p>
+          </div>
+        </div>
+        <div className="mentorCard">
+          <img className="mentorImage" src={User} alt="" />
+          <div className="mentorDetails">
+            <p className="mentorName">Sundar Pichai</p>
+            <p className="companyName">Google</p>
+          </div>
+        </div>
       </Carousel>
     </div>
   );

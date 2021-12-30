@@ -101,6 +101,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* z-index: -1; */
 }
 
 .visionDivOne{
@@ -127,6 +128,7 @@
     align-items: center;
     cursor: pointer;
     transition: transform 1s;
+    /* z-index: -1; */
 }
 
 .visionCard:hover{
