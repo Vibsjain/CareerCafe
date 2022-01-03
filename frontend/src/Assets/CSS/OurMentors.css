@@ -1,0 +1,34 @@
+.mentor-main-card {
+    background-color: rgb(235, 241, 241);
+    height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px 10px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-image {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+}
+.companyLogo {
+    position: absolute;
+    height: 90px;
+    top: 37%;
+    right: 20%;
+}
+
+.images {
+    height: 100%;
+}
+
+.mentor-info {
+    /* background-color: #fff8dc; */
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+}

@@ -21,7 +21,7 @@
     align-items: center;
     overflow: hidden;
     position: relative;
-    height: 400px;
+    min-height: 400px;
     margin-left: 100px;
     margin-bottom: 300px;
     z-index: -1;
