@@ -8,7 +8,7 @@ import "../Assets/CSS/Common.css";
 
 const StudentCard = (props) => {
     return (
-        <div className="flex flex-col w-9/12 h-108 justify-center items-center mt-[20%] border-2 rounded-2xl border-cyan-900">
+        <div className="flex flex-col w-9/12 h-108 justify-center items-center mt-[20%] border-2 rounded-2xl border-cyan-900 shadow-2xl">
             <img
                 src={props.image}
                 alt="student"
@@ -60,6 +60,30 @@ export default function Students() {
                 removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
                 containerClass="carousel-container"
             >
+                <StudentCard
+                    image={User}
+                    name="Rishabh"
+                    company="Google"
+                    cImage={Google}
+                />
+                <StudentCard
+                    image={User}
+                    name="Rishabh"
+                    company="Google"
+                    cImage={Google}
+                />
+                <StudentCard
+                    image={User}
+                    name="Rishabh"
+                    company="Google"
+                    cImage={Google}
+                />
+                <StudentCard
+                    image={User}
+                    name="Rishabh"
+                    company="Google"
+                    cImage={Google}
+                />
                 <StudentCard
                     image={User}
                     name="Rishabh"
