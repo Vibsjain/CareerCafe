@@ -6,6 +6,7 @@ import "../Assets/CSS/Common.css";
 import Courses from "../Components/Courses";
 import Mentors from "../Components/OurMentors";
 import Students from "../Components/Students";
+import Footer from "../Components/Footer";
 
 export default function HomePage() {
     AOS.init({
@@ -76,6 +77,9 @@ export default function HomePage() {
             </div>
             <div>
                 <Students />
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     );
