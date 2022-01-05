@@ -4,6 +4,7 @@ import logo from "../Assets/Images/logo.png";
 
 export default function NavComponent() {
     const [isOpen, setIsOpen] = useState(false);
+    const textClass = "text-1xl";
     return (
         <>
             <nav className="Navbar">
@@ -34,17 +35,19 @@ export default function NavComponent() {
                         <a href="#">Contact Us</a>
                     </li>
                 </ul>
-                {!isOpen ? (
-                    <i
-                        class="fa fa-reorder text-3xl"
-                        onClick={() => setIsOpen(true)}
-                    ></i>
-                ) : (
-                    <i
-                        class="fa fa-close text-3xl"
-                        onClick={() => setIsOpen(false)}
-                    ></i>
-                )}
+                <div className="flex sm:hidden">
+                    {!isOpen ? (
+                        <i
+                            class="fa fa-reorder text-3xl"
+                            onClick={() => setIsOpen(true)}
+                        ></i>
+                    ) : (
+                        <i
+                            class="fa fa-close text-3xl"
+                            onClick={() => setIsOpen(false)}
+                        ></i>
+                    )}
+                </div>
             </nav>
             {isOpen && (
                 <div className="absolute right-0 top-0 w-[50%] h-full bg-[#43B5D5] z-50">
@@ -54,35 +57,25 @@ export default function NavComponent() {
                     ></i>
                     <ul className="flex flex-col justify-end items-center gap-y-3">
                         <li>
-                            <h1 className="text-2xl hover:text-3xl ">Home</h1>
+                            <h1 className={`${textClass}`}>Home</h1>
                         </li>
                         <li>
-                            <h1 className="text-2xl hover:text-3xl ">
-                                Tech Courses
-                            </h1>
+                            <h1 className={`${textClass}`}>Tech Courses</h1>
                         </li>
                         <li>
-                            <h1 className="text-2xl hover:text-3xl ">
-                                Non Tech Course
-                            </h1>
+                            <h1 className={`${textClass}`}>Non Tech Course</h1>
                         </li>
                         <li>
-                            <h1 className="text-2xl hover:text-3xl ">
-                                Hire With Us
-                            </h1>
+                            <h1 className={`${textClass}`}>Hire With Us</h1>
                         </li>
                         <li>
-                            <h1 className="text-2xl hover:text-3xl ">Notes</h1>
+                            <h1 className={`${textClass}`}>Notes</h1>
                         </li>
                         <li>
-                            <h1 className="text-2xl hover:text-3xl ">
-                                About Us
-                            </h1>
+                            <h1 className={`${textClass}`}>About Us</h1>
                         </li>
                         <li>
-                            <h1 className="text-2xl hover:text-3xl ">
-                                Contact Us
-                            </h1>
+                            <h1 className={`${textClass}`}>Contact Us</h1>
                         </li>
                     </ul>
                 </div>
