@@ -1,4 +1,4 @@
-.mentorImage{
+.mentorImage {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -7,7 +7,7 @@
     bottom: 150px;
 }
 
-.mentorMainHeading{
+.mentorMainHeading {
     text-align: center;
     font-size: 50px;
     font-weight: 600;
@@ -28,7 +28,7 @@
     padding: 10px;
 }
 
-.mentorDetails{
+.mentorDetails {
     border-radius: 20px;
     width: 300px;
     height: 200px;
@@ -42,7 +42,12 @@
     padding-top: 30px;
 }
 
-.mentorName, .companyName{
+.mentorName,
+.companyName {
     font-weight: bold;
     font-size: 30px;
+}
+
+.react-multi-carousel-list {
+    margin-left: 13%;
 }
