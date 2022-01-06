@@ -1,14 +1,14 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Lato", sans-serif;
 }
 
-.Navbar{
+.Navbar {
     display: flex;
     align-items: center;
     width: 100vw;
@@ -16,19 +16,19 @@ body{
     box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
     position: fixed;
     padding: 0px 70px;
-    z-index: 999;
+    z-index: 10;
 }
 
 /* .NavbarLogo{
     Will come back here
 } */
 
-.NavbarLinks{
+.NavbarLinks {
     list-style-type: none;
     display: flex;
 }
 
-.NavbarLinks li a{
+.NavbarLinks li a {
     display: block;
     text-decoration: none;
     color: #444;
@@ -37,17 +37,17 @@ body{
     transition: 0.4s all;
 }
 
-.NavbarLinks li.NavbarDropdown{
+.NavbarLinks li.NavbarDropdown {
     position: relative;
 }
 
-.NavbarLinks li.NavbarDropdown:hover .dropDown{
+.NavbarLinks li.NavbarDropdown:hover .dropDown {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
 }
 
-.NavbarLinks li.NavbarDropdown .dropDown{
+.NavbarLinks li.NavbarDropdown .dropDown {
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -64,16 +64,28 @@ body{
     transition: 0.4s all;
 }
 
-.NavbarLinks li.NavbarDropdown .dropDown a{
+.NavbarLinks li.NavbarDropdown .dropDown a {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 400;
 }
 
-.NavbarDropdown .dropDown a:hover{
+.NavbarDropdown .dropDown a:hover {
     padding-left: 30px;
 }
 
-.NavbarLinks li a:hover{
-    color: #296EB4;
+.NavbarLinks li a:hover {
+    color: #296eb4;
+}
+
+
+@media screen and (max-width: 750px) {
+    .Navbar{
+        width:100%;
+        padding:0px 10px 0px 0px;
+        justify-content: space-between;
+    }
+    .NavbarLinks{
+        display:none;
+    }
 }
