@@ -1,8 +1,8 @@
 import React from "react";
-import NavComponent from "../Components/Navbar";
 import AOS from "aos";
 import "../Assets/CSS/HomePage.css";
 import "../Assets/CSS/Common.css";
+import NavComponent from "../Components/Navbar";
 import Courses from "../Components/Courses";
 import Mentors from "../Components/OurMentors";
 import Students from "../Components/Students";
@@ -49,26 +49,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                {/* <img className="homepagetopimage" src={HomeImage} alt="" /> */}
             </div>
-            {/* <div className="visiondiv">
-                <p data-aos="fade-up" className="visionheading">Our Vision</p>
-                <br />
-                <div className="visioncarddiv">
-                <div className="visioncard">
-                    <p className="visiontext">Live Coding Classes</p>
-                </div>
-                <div className="visioncard">
-                    <p className="visiontext">Live Aptitude Classes</p>
-                </div>
-                <div className="visioncard">
-                    <p className="visiontext">Mock <br /> Interviews</p>
-                </div>
-                <div className="visioncard">
-                    <p className="visiontext">Mentorship in Developing Project</p>
-                </div>
-                </div>
-    </div> */}
             <div>
                 <Courses />
             </div>

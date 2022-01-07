@@ -79,7 +79,7 @@ body {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
     .Navbar{
         width:100%;
         padding:0px 10px 0px 0px;
