@@ -71,7 +71,7 @@
     font-size: 30px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
     .homepagetopdiv {
         flex-direction: column;
     }

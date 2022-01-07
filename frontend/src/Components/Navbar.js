@@ -35,7 +35,7 @@ export default function NavComponent() {
                         <a href="#">Contact Us</a>
                     </li>
                 </ul>
-                <div className="flex sm:hidden">
+                <div className="flex lg:hidden">
                     {!isOpen ? (
                         <i
                             class="fa fa-reorder text-3xl"

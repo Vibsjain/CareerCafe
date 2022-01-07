@@ -55,7 +55,7 @@
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
     .courseFlexBox {
         flex-direction: column;
         gap: 40px;

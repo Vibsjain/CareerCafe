@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavComponent from "../Components/Navbar";
 import AOS from "aos";
 import "../Assets/CSS/HomePage.css";
@@ -12,7 +12,17 @@ export default function HomePage() {
     AOS.init({
         duration: 1000,
     });
-
+    const [isVisible, setIsVisible] = useState(false);
+    window.onscroll = function () {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
     return (
         <div>
             <NavComponent />
@@ -49,7 +59,6 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                {/* <img className="homepagetopimage" src={HomeImage} alt="" /> */}
             </div>
             {/* <div className="visiondiv">
                 <p data-aos="fade-up" className="visionheading">Our Vision</p>
@@ -81,6 +90,17 @@ export default function HomePage() {
             <div>
                 <Footer />
             </div>
+            {isVisible && (
+                <button
+                    className="fixed right-12 bottom-12 bg-[#F27830] py-3 px-3 rounded shadow-2xl"
+                    onClick={() => {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }}
+                >
+                    TOP
+                </button>
+            )}
         </div>
     );
 }
