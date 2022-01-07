@@ -6,10 +6,10 @@ import Telegram from "../Assets/Images/telegram.png";
 
 export default function Footer() {
     return (
-        <div className="p-6 bg-black flex flex-row justify-center items-center">
+        <div className="p-6 bg-gray-800 flex flex-row justify-center items-center">
             <div className="mb-4 flex flex-col md:flex-row sm:flex-col justify-center items-center w-full">
                 <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
-                    <h3 className="text-3xl py-4 text-white">Contact Us</h3>
+                    <h3 className="text-3xl py-4 text-white text-center sm:text-left">Contact Us</h3>
                     <form action="#" className="flex flex-col justify-center">
                         <div className="mb-4">
                             <input
@@ -36,14 +36,14 @@ export default function Footer() {
                             ></textarea>
                         </div>
                         <button
-                            className="bg-[#eb924e] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded"
+                            className="bg-[#eb924e] transition-transform duration-500 hover:scale-105 text-white font-bold py-2 px-4 rounded"
                             type="submit"
                         >
                             Submit
                         </button>
                     </form>
                 </div>
-                <div className="sm:w-1/2 md:w-1/2 lg:w-1/3 pl-8">
+                <div className="sm:w-1/2 md:w-1/2 lg:w-1/3">
                     <div className="w-full flex flex-col justify-center items-center text-white text-center">
                         <h3 className="text-3xl py-4 text-white mb-6">
                             Navigate
@@ -92,7 +92,7 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="sm:w-1/2 md:w-1/2 lg:w-1/3 pl-8">
+                <div className="sm:w-1/2 md:w-1/2 lg:w-1/3">
                     <div className="w-full text-center">
                         <h3 className="text-3xl py-4 text-white mb-6">
                             Join Us On

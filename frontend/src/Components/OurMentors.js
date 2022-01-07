@@ -55,7 +55,7 @@ export default function Mentors() {
 
     return (
         <div className="w-full flex flex-col gap-y-10 justify-center font-bold">
-            <p className="text-5xl text-center text-[#10225F]">Our Mentors</p>
+            <p className="text-5xl text-center text-[#07075F]">Our Mentors</p>
             <div className="flex w-full md:px-0 sm:px-24">
                 <Carousel
                     responsive={responsive}
