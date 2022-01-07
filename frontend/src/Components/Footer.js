@@ -36,7 +36,7 @@ export default function Footer() {
                             ></textarea>
                         </div>
                         <button
-                            className="bg-[#eb924e] hover:bg-purple-600 text-white font-bold py-2 px-4 rounded"
+                            className="bg-[#eb924e] transition-transform duration-500 hover:scale-105 text-white font-bold py-2 px-4 rounded"
                             type="submit"
                         >
                             Submit

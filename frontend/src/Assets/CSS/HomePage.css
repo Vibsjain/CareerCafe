@@ -71,11 +71,7 @@
     font-size: 30px;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 780px) {
-=======
-@media screen and (max-width: 770px) {
->>>>>>> 80a53b1e26f2fc0ea2fbaee325f13e73c5e5dd69
     .homepagetopdiv {
         flex-direction: column;
     }

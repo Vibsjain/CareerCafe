@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import React from "react";
-=======
 import React, { useState } from "react";
-import NavComponent from "../Components/Navbar";
->>>>>>> 80a53b1e26f2fc0ea2fbaee325f13e73c5e5dd69
 import AOS from "aos";
 import "../Assets/CSS/HomePage.css";
 import "../Assets/CSS/Common.css";
@@ -20,8 +15,8 @@ export default function HomePage() {
     const [isVisible, setIsVisible] = useState(false);
     window.onscroll = function () {
         if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
+            document.body.scrollTop > 500 ||
+            document.documentElement.scrollTop > 500
         ) {
             setIsVisible(true);
         } else {

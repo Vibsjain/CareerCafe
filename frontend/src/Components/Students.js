@@ -32,11 +32,11 @@ export default function Students() {
         superLargeDesktop: {
             // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
-            items: 3,
+            items: 5,
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3,
+            items: 5,
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -50,7 +50,7 @@ export default function Students() {
 
     return (
         <div className="w-full flex flex-col gap-y-10 justify-center font-bold mt-28 mb-24">
-            <p className="text-5xl text-center text-[#10225F]">Our Students</p>
+            <p className="text-5xl text-center text-[#07075F]">Our Students</p>
             <div className="flex w-full md:px-0 sm:px-24">
                 <Carousel
                     responsive={responsive}
