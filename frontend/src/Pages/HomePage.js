@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React from "react";
+=======
+import React, { useState } from "react";
+import NavComponent from "../Components/Navbar";
+>>>>>>> 80a53b1e26f2fc0ea2fbaee325f13e73c5e5dd69
 import AOS from "aos";
 import "../Assets/CSS/HomePage.css";
 import "../Assets/CSS/Common.css";
@@ -12,7 +17,17 @@ export default function HomePage() {
     AOS.init({
         duration: 1000,
     });
-
+    const [isVisible, setIsVisible] = useState(false);
+    window.onscroll = function () {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
     return (
         <div>
             <NavComponent />
@@ -62,6 +77,17 @@ export default function HomePage() {
             <div>
                 <Footer />
             </div>
+            {isVisible && (
+                <button
+                    className="fixed right-12 bottom-12 bg-[#F27830] py-3 px-3 rounded shadow-2xl"
+                    onClick={() => {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }}
+                >
+                    TOP
+                </button>
+            )}
         </div>
     );
 }

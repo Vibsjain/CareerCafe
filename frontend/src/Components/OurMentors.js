@@ -9,7 +9,7 @@ import "../Assets/CSS/Common.css";
 
 const MentorCard = (props) => {
     return (
-        <div className="mentor-main-card">
+        <div className="mentor-main-card mb-12">
             <div className="card-image">
                 <img
                     src={props.image}
@@ -54,54 +54,56 @@ export default function Mentors() {
     };
 
     return (
-        <div className="mentorOuterDiv">
-            <p className="mentorMainHeading">Our Mentors</p>
-            <Carousel
-                responsive={responsive}
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={3000}
-                keyBoardControl={true}
-                removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-                containerClass="carousel-container"
-            >
-                <MentorCard
-                    image={User}
-                    mentorName="Sundar Pichai"
-                    mentorCompany="Google"
-                    cImage={Google}
-                />
-                <MentorCard
-                    image={User}
-                    mentorName="Sundar Pichai"
-                    mentorCompany="Google"
-                    cImage={Google}
-                />
-                <MentorCard
-                    image={User}
-                    mentorName="Sundar Pichai"
-                    mentorCompany="Google"
-                    cImage={Google}
-                />
-                <MentorCard
-                    image={User}
-                    mentorName="Sundar Pichai"
-                    mentorCompany="Google"
-                    cImage={Google}
-                />
-                <MentorCard
-                    image={User}
-                    mentorName="Sundar Pichai"
-                    mentorCompany="Google"
-                    cImage={Google}
-                />
-                <MentorCard
-                    image={User}
-                    mentorName="Sundar Pichai"
-                    mentorCompany="Google"
-                    cImage={Google}
-                />
-            </Carousel>
+        <div className="w-full flex flex-col gap-y-10 justify-center font-bold">
+            <p className="text-5xl text-center text-[#10225F]">Our Mentors</p>
+            <div className="flex w-full md:px-0 sm:px-24">
+                <Carousel
+                    responsive={responsive}
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={3000}
+                    keyBoardControl={true}
+                    removeArrowOnDeviceType={["mobile"]}
+                    containerClass="carousel-container"
+                >
+                    <MentorCard
+                        image={User}
+                        mentorName="Sundar Pichai"
+                        mentorCompany="Google"
+                        cImage={Google}
+                    />
+                    <MentorCard
+                        image={User}
+                        mentorName="Sundar Pichai"
+                        mentorCompany="Google"
+                        cImage={Google}
+                    />
+                    <MentorCard
+                        image={User}
+                        mentorName="Sundar Pichai"
+                        mentorCompany="Google"
+                        cImage={Google}
+                    />
+                    <MentorCard
+                        image={User}
+                        mentorName="Sundar Pichai"
+                        mentorCompany="Google"
+                        cImage={Google}
+                    />
+                    <MentorCard
+                        image={User}
+                        mentorName="Sundar Pichai"
+                        mentorCompany="Google"
+                        cImage={Google}
+                    />
+                    <MentorCard
+                        image={User}
+                        mentorName="Sundar Pichai"
+                        mentorCompany="Google"
+                        cImage={Google}
+                    />
+                </Carousel>
+            </div>
         </div>
     );
 }

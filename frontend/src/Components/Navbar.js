@@ -4,7 +4,7 @@ import logo from "../Assets/Images/logo.png";
 
 export default function NavComponent() {
     const [isOpen, setIsOpen] = useState(false);
-    const textClass = "text-1xl";
+    const textClass = "text-1xl text-white";
     return (
         <>
             <nav className="Navbar">
@@ -35,7 +35,7 @@ export default function NavComponent() {
                         <a href="#">Contact Us</a>
                     </li>
                 </ul>
-                <div className="flex sm:hidden">
+                <div className="flex lg:hidden">
                     {!isOpen ? (
                         <i
                             class="fa fa-reorder text-3xl"
@@ -50,9 +50,9 @@ export default function NavComponent() {
                 </div>
             </nav>
             {isOpen && (
-                <div className="absolute right-0 top-0 w-[50%] h-full bg-[#43B5D5] z-50">
+                <div className="sidebar absolute right-0 top-0 w-[50%] h-full  z-50">
                     <i
-                        class="fa fa-close text-3xl ml-4 mt-4"
+                        class="fa fa-close text-3xl ml-4 mt-4 text-white"
                         onClick={() => setIsOpen(false)}
                     ></i>
                     <ul className="flex flex-col justify-end items-center gap-y-3">
