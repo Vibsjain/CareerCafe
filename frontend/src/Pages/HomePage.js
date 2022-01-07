@@ -92,13 +92,13 @@ export default function HomePage() {
             </div>
             {isVisible && (
                 <button
-                    className="fixed right-12 bottom-12 bg-[#F27830] py-3 px-3 rounded shadow-2xl"
+                    className="fixed right-12 bottom-12 bg-[#F27830] py-3 px-3 rounded-full shadow-2xl"
                     onClick={() => {
                         document.body.scrollTop = 0;
                         document.documentElement.scrollTop = 0;
                     }}
                 >
-                    TOP
+                    <i class="fas fa-arrow-up"></i>
                 </button>
             )}
         </div>

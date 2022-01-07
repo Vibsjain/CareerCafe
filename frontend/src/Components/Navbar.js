@@ -16,23 +16,19 @@ export default function NavComponent() {
                         <a href="#">Home</a>
                     </li>
                     <li className="NavbarDropdown">
-                        <a href="#">Courses</a>
-                        <div className="dropDown">
-                            <a href="#">Tech</a>
-                            <a href="#">Non Tech</a>
-                        </div>
+                        <a href="#">Placement Courses</a>
                     </li>
                     <li className="NavbarDropdown">
-                        <a href="#">Hire With Us</a>
+                        <a href="#">Interview Experience</a>
                     </li>
                     <li className="NavbarDropdown">
                         <a href="#">Notes</a>
                     </li>
                     <li className="NavbarDropdown">
-                        <a href="#">About Us</a>
+                        <a href="#">Placement Papers</a>
                     </li>
                     <li className="NavbarDropdown">
-                        <a href="#">Contact Us</a>
+                        <a href="#">Blogs</a>
                     </li>
                 </ul>
                 <div className="flex lg:hidden">
@@ -50,7 +46,7 @@ export default function NavComponent() {
                 </div>
             </nav>
             {isOpen && (
-                <div className="sidebar absolute right-0 top-0 w-[50%] h-full  z-50">
+                <div className="sidebar fixed right-0 top-0 w-[50%] h-full  z-50">
                     <i
                         class="fa fa-close text-3xl ml-4 mt-4 text-white"
                         onClick={() => setIsOpen(false)}
@@ -60,19 +56,19 @@ export default function NavComponent() {
                             <h1 className={`${textClass}`}>Home</h1>
                         </li>
                         <li>
-                            <h1 className={`${textClass}`}>Tech Courses</h1>
+                            <h1 className={`${textClass}`}>Placement Courses</h1>
                         </li>
                         <li>
-                            <h1 className={`${textClass}`}>Non Tech Course</h1>
-                        </li>
-                        <li>
-                            <h1 className={`${textClass}`}>Hire With Us</h1>
+                            <h1 className={`${textClass}`}>Interview Experience</h1>
                         </li>
                         <li>
                             <h1 className={`${textClass}`}>Notes</h1>
                         </li>
                         <li>
-                            <h1 className={`${textClass}`}>About Us</h1>
+                            <h1 className={`${textClass}`}>Placement Papers</h1>
+                        </li>
+                        <li>
+                            <h1 className={`${textClass}`}>Blogs</h1>
                         </li>
                         <li>
                             <h1 className={`${textClass}`}>Contact Us</h1>
