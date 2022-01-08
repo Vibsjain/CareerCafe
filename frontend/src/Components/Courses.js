@@ -3,7 +3,8 @@ import React from "react";
 const CourseCard = (props) => {
   return (
     <div className="w-[350px] flex flex-col items-center justify-center rounded-lg m-2 mb-20 border-black border cursor-pointer  hover:shadow-2xl hover:shadow-[#eb924e]">
-      <img className="w-[350px] rounded-t-lg h-auto" src={props.image} alt="" />
+      <img className="w-[350px] rounded-t-lg h-auto hover:opacity-50" src={props.image} alt="" />
+      <p className="opacity-0 hover:opacity-100 inset-0 z-10 text-black">{props.desc}</p>
       <p className="text-3xl font-bold p-4">{props.title}</p>
     </div>
   );
@@ -19,22 +20,7 @@ export default function Courses() {
         <CourseCard
           image="https://media.istockphoto.com/photos/hand-touching-brain-of-ai-symbolic-machine-learning-artificial-of-picture-id1274437411?b=1&k=20&m=1274437411&s=170667a&w=0&h=btEXIllRM2Qlj4PusT5tjYDMgxZ2TXFP_o05sTUR_L8="
           title="Machine Learning"
-        />
-        <CourseCard
-          image="https://media.istockphoto.com/photos/hand-touching-brain-of-ai-symbolic-machine-learning-artificial-of-picture-id1274437411?b=1&k=20&m=1274437411&s=170667a&w=0&h=btEXIllRM2Qlj4PusT5tjYDMgxZ2TXFP_o05sTUR_L8="
-          title="Machine Learning"
-        />
-        <CourseCard
-          image="https://media.istockphoto.com/photos/hand-touching-brain-of-ai-symbolic-machine-learning-artificial-of-picture-id1274437411?b=1&k=20&m=1274437411&s=170667a&w=0&h=btEXIllRM2Qlj4PusT5tjYDMgxZ2TXFP_o05sTUR_L8="
-          title="Machine Learning"
-        />
-        <CourseCard
-          image="https://media.istockphoto.com/photos/hand-touching-brain-of-ai-symbolic-machine-learning-artificial-of-picture-id1274437411?b=1&k=20&m=1274437411&s=170667a&w=0&h=btEXIllRM2Qlj4PusT5tjYDMgxZ2TXFP_o05sTUR_L8="
-          title="Machine Learning"
-        />
-        <CourseCard
-          image="https://media.istockphoto.com/photos/hand-touching-brain-of-ai-symbolic-machine-learning-artificial-of-picture-id1274437411?b=1&k=20&m=1274437411&s=170667a&w=0&h=btEXIllRM2Qlj4PusT5tjYDMgxZ2TXFP_o05sTUR_L8="
-          title="Machine Learning"
+          desc="Hello world"
         />
       </div>
     </div>
