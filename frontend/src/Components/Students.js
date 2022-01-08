@@ -8,20 +8,29 @@ import "../Assets/CSS/Common.css";
 
 const StudentCard = (props) => {
     return (
-        <div className="flex flex-col w-[14rem] h-[18rem] justify-center items-center mt-[20%] border-2 rounded-2xl border-cyan-900 shadow-2xl">
+        <div className="flex flex-col w-[22rem] h-[22rem] justify-center items-center mt-[20%] border-4 border-[#63B3ED] bg-[#1A202C] shadow-2xl">
             <img
                 src={props.image}
                 alt="student"
-                className="absolute w-32 top-0 rounded-full"
+                className="absolute w-32 top-0 rounded-full border-4 border-[#63B3ED]"
             />
-            <div className="flex flex-col justify-center items-center pt-[6rem] pb-8">
-                <h1 className="text-2xl font-semibold">{props.name}</h1>
+            <div className="flex flex-col justify-between items-center pt-[6rem] pb-8 h-full gap-y-2">
+                <h1 className="text-3xl font-semibold text-[#7F9CF5]">
+                    {props.name}
+                </h1>
+                <h1 className="text-sm font-normal text-white">
+                    Placed at {props.company}
+                </h1>
+                <h1 className="text-sm font-normal text-white px-4 text-justify">
+                    D_CODER gave me exposure that not only helped me in
+                    improving my technical skills but also helped me in
+                    improving my overall personality.
+                </h1>
                 <img
                     src={props.cImage}
                     alt="company"
-                    className="w-28 py-2"
+                    className="w-16 py-2"
                 ></img>
-                <h1 className="text-2xl font-semibold">{props.company}</h1>
             </div>
         </div>
     );
