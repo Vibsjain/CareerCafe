@@ -7,6 +7,7 @@ import Courses from "../Components/Courses";
 import Mentors from "../Components/OurMentors";
 import Students from "../Components/Students";
 import Footer from "../Components/Footer";
+import Aboutus from "../Components/Aboutus";
 
 export default function HomePage() {
     AOS.init({
@@ -59,6 +60,9 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <Aboutus />
             </div>
             <div>
                 <Courses />
