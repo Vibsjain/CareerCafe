@@ -14,7 +14,7 @@ export default function AdminNav() {
                     <a href="#">Queries</a>
                 </li>
             </ul>
-            <button className="logoutButton">Log Out <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+            <button className="logoutButton">Log Out <i className="fa fa-sign-out" aria-hidden="true"></i></button>
         </nav>
     )
 }

@@ -80,7 +80,7 @@ export default function HomePage() {
                         document.documentElement.scrollTop = 0;
                     }}
                 >
-                    <i class="fas fa-arrow-up"></i>
+                    <i className="fas fa-arrow-up"></i>
                 </button>
             )}
         </div>

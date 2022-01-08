@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import User from "../Assets/Images/user.png";
@@ -6,6 +6,7 @@ import Google from "../Assets/Images/google.png";
 import "../Assets/CSS/OurMentors.css";
 import "../Assets/CSS/Mentors.css";
 import "../Assets/CSS/Common.css";
+import api from "../api/index";
 
 const MentorCard = (props) => {
     return (
@@ -33,6 +34,16 @@ const MentorCard = (props) => {
 };
 
 export default function Mentors() {
+    const [mentors, setMentors] = useState([]);
+    const getMentors = async () => {
+        const response = await api.get("/mentors");
+        setMentors(response.data);
+        console.log(mentors);
+    };
+    useEffect(() => {
+        getMentors();
+    }, []);
+
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -66,42 +77,14 @@ export default function Mentors() {
                     removeArrowOnDeviceType={["mobile"]}
                     containerClass="carousel-container"
                 >
-                    <MentorCard
-                        image={User}
-                        mentorName="Sundar Pichai"
-                        mentorCompany="Google"
-                        cImage={Google}
-                    />
-                    <MentorCard
-                        image={User}
-                        mentorName="Sundar Pichai"
-                        mentorCompany="Google"
-                        cImage={Google}
-                    />
-                    <MentorCard
-                        image={User}
-                        mentorName="Sundar Pichai"
-                        mentorCompany="Google"
-                        cImage={Google}
-                    />
-                    <MentorCard
-                        image={User}
-                        mentorName="Sundar Pichai"
-                        mentorCompany="Google"
-                        cImage={Google}
-                    />
-                    <MentorCard
-                        image={User}
-                        mentorName="Sundar Pichai"
-                        mentorCompany="Google"
-                        cImage={Google}
-                    />
-                    <MentorCard
-                        image={User}
-                        mentorName="Sundar Pichai"
-                        mentorCompany="Google"
-                        cImage={Google}
-                    />
+                    {mentors.map((card) => {
+                        <MentorCard
+                            image={User}
+                            mentorName={card.name}
+                            mentorCompany={card.company}
+                            cImage={Google}
+                        />;
+                    })}
                 </Carousel>
             </div>
         </div>

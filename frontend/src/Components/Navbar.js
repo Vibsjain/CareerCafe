@@ -34,12 +34,12 @@ export default function NavComponent() {
                 <div className="flex lg:hidden">
                     {!isOpen ? (
                         <i
-                            class="fa fa-reorder text-3xl"
+                            className="fa fa-reorder text-3xl"
                             onClick={() => setIsOpen(true)}
                         ></i>
                     ) : (
                         <i
-                            class="fa fa-close text-3xl"
+                            className="fa fa-close text-3xl"
                             onClick={() => setIsOpen(false)}
                         ></i>
                     )}
@@ -48,7 +48,7 @@ export default function NavComponent() {
             {isOpen && (
                 <div className="sidebar fixed right-0 top-0 w-[50%] h-full  z-50">
                     <i
-                        class="fa fa-close text-3xl ml-4 mt-4 text-white"
+                        className="fa fa-close text-3xl ml-4 mt-4 text-white"
                         onClick={() => setIsOpen(false)}
                     ></i>
                     <ul className="flex flex-col justify-end items-center gap-y-3">
@@ -56,10 +56,14 @@ export default function NavComponent() {
                             <h1 className={`${textClass}`}>Home</h1>
                         </li>
                         <li>
-                            <h1 className={`${textClass}`}>Placement Courses</h1>
+                            <h1 className={`${textClass}`}>
+                                Placement Courses
+                            </h1>
                         </li>
                         <li>
-                            <h1 className={`${textClass}`}>Interview Experience</h1>
+                            <h1 className={`${textClass}`}>
+                                Interview Experience
+                            </h1>
                         </li>
                         <li>
                             <h1 className={`${textClass}`}>Notes</h1>
