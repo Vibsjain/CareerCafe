@@ -77,7 +77,7 @@ export default function Mentors() {
                     removeArrowOnDeviceType={["mobile"]}
                     containerClass="carousel-container"
                 >
-                    {mentors.map((card) => {
+                    {mentors && mentors.length && mentors.map((card) => {
                         <MentorCard
                             image={User}
                             mentorName={card.name}
