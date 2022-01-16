@@ -30,7 +30,7 @@ body {
     justify-content: flex-end;
 }
 
-.NavbarLinks li a {
+.NavbarLinks li h1 {
     display: block;
     text-decoration: none;
     color: #444;
@@ -76,8 +76,9 @@ body {
     padding-left: 30px;
 }
 
-.NavbarLinks li a:hover {
+.NavbarLinks li h1:hover {
     color: #296eb4;
+    cursor:pointer;
 }
 
 .sidebar {
