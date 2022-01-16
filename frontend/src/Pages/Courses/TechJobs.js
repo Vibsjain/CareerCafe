@@ -17,7 +17,7 @@ const TechJobs = () => {
     "Off campus placement assistance ",
   ];
   return (
-    <div className="courseBackground">
+    <div className="">
       <NavComponent />
       <div className=" flex flex-col pt-12 w-full justify-center items-center min-h-[100vh] gap-y-4 ">
         <h1 className="typewriter text-9xl font-bold">Tech Jobs</h1>
