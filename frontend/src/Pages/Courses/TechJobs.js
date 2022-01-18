@@ -15,6 +15,7 @@ const TechJobs = () => {
     "DBMS/SQL/OS Interview material and classes on important topics",
     "Guest lecturers from industry experts",
     "Off campus placement assistance ",
+    "Resume formation and up gradation",
   ];
   return (
     <div className="">
@@ -54,16 +55,18 @@ const TechJobs = () => {
         </p>
       </div>
       <div className="flex flex-col w-full h-[100vh] justify-center items-center">
-        <div className="flex w-full justify-start items-center">
-          {/* {
-            POINTS.map((point, index)=>{
-              return(
-                {
-                  index%2==0?<iv
-                }
-              )
-            })
-          } */}
+        <div className="grid grid-cols-2 gap-4 justify-center items-center">
+          {POINTS.map((point, index) => {
+            return (
+              <div
+                className={`flex w-full justify-center items-center bg-[#${
+                  index % 2 == 0 ? "10225F" : "EB924E"
+                }] py-4 px-8 rounded border border-gray-900`}
+              >
+                <h1 className="text-white text-md text-semibold ">{point}</h1>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
