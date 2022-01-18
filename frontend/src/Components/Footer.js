@@ -6,10 +6,10 @@ import Telegram from "../Assets/Images/telegram.png";
 
 export default function Footer() {
     return (
-        <div className="p-6 bg-gray-800 flex flex-row justify-center items-center">
+        <div className="p-6 bg-gray-800 flex flex-row justify-center items-center" id="contact">
             <div className="mb-4 flex flex-col md:flex-row sm:flex-col justify-center items-center w-full">
                 <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
-                    <h3 className="text-3xl py-4 text-white text-center sm:text-left">Contact Us</h3>
+                    <h3 className="text-2xl py-4 text-white text-center sm:text-left">Still confused and have questions?  Get in touch with our experts</h3>
                     <form action="#" className="flex flex-col justify-center">
                         <div className="mb-4">
                             <input
