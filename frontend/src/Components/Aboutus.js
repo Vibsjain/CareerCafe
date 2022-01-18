@@ -17,7 +17,7 @@ export default function Aboutus() {
         crack all the placement rounds of top tier companies.
       </p>
       <p className="mb-8 text-xl font-bold">With an ever-improving team that supports the highest level of service delivered in the field of Placement Preparation, Career Cafe has created a niche that is unmatched.</p>
-      <p className="mb-20 text-xl font-bold">We groom and enrich your job skills, and make you ready for the corporate world via our optimized placement training courses. Our trainers have mastered the skill of bringing the best out of every student. Throughout the course, our trainers helps the students identify their strengths and weaknesses and groom them to improve their performances.</p>
+      <p className="mb-10 text-xl font-bold">We groom and enrich your job skills, and make you ready for the corporate world via our optimized placement training courses. Our trainers have mastered the skill of bringing the best out of every student. Throughout the course, our trainers helps the students identify their strengths and weaknesses and groom them to improve their performances.</p>
     </div>
     </div>
   );
