@@ -1,5 +1,6 @@
 import React from "react";
 import NavComponent from "../../Components/Navbar";
+import "../../Assets/CSS/Common.css";
 // #10225F
 const TechJobs = () => {
   const POINTS = [
@@ -60,10 +61,12 @@ const TechJobs = () => {
             return (
               <div
                 className={`flex w-full justify-center items-center bg-[#${
-                  index % 2 == 0 ? "10225F" : "EB924E"
-                }] py-4 px-8 rounded border border-gray-900`}
+                  index % 4 == 0 || (index + 1) % 4 == 0 ? "10225F" : "EB924E"
+                }] py-4 px-8 rounded-full border border-gray-900`}
               >
-                <h1 className="text-white text-md text-semibold ">{point}</h1>
+                <h1 className={`text-${
+                  index % 4 == 0 || (index + 1) % 4 == 0 ? "white" : "[#07075F]"
+                } text-md font-bold`}>{point}</h1>
               </div>
             );
           })}
