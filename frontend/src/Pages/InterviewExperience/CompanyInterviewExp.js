@@ -1,12 +1,17 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import { exp } from "../../Assets/Data/Experience";
 import Footer from "../../Components/Footer";
 import InterviewCard from "../../Components/InterviewCard";
 import NavComponent from "../../Components/Navbar";
 import NoExp from "../../Components/NoExp";
 
-function PlacementInterviewExp() {
-  const data = exp.filter((experience) => experience.role === "placement");
+export default function CompanyInterviewExp() {
+  const { companyName } = useParams();
+  var name = companyName.replaceAll("-", " ");
+  name = name.replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
+
+  const data = exp.filter((experience) => experience.company === companyName);
 
   return (
     <div>
@@ -14,7 +19,7 @@ function PlacementInterviewExp() {
         <NavComponent />
       </div>
       <p className="text-[50px] font-bold text-center underline pt-28">
-        Placement Interview Experiences
+        {name} Interview Experiences
       </p>
       {data.length === 0 && <NoExp />}
       {data.length > 0 &&
@@ -35,5 +40,3 @@ function PlacementInterviewExp() {
     </div>
   );
 }
-
-export default PlacementInterviewExp;

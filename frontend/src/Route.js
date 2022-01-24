@@ -14,6 +14,7 @@ import PlacementInterviewExp from "./Pages/InterviewExperience/PlacementIntervie
 import InterviewExp from "./Pages/InterviewExperience/InterviewExp";
 import OncampusInterviewExp from "./Pages/InterviewExperience/OncampusInterviewExp";
 import OffcampusInterviewExp from "./Pages/InterviewExperience/OffcampusInterviewExp";
+import CompanyInterviewExp from "./Pages/InterviewExperience/CompanyInterviewExp";
 
 const FinalRoutes = () => {
   return (
@@ -50,6 +51,7 @@ const FinalRoutes = () => {
           exact
           component={OffcampusInterviewExp}
         />
+        <Route path="/interview/experience/company/:companyName" exact component={CompanyInterviewExp} />
       </Switch>
     </BrowserRouter>
   );
