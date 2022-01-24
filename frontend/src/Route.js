@@ -9,13 +9,13 @@ import {
   NonEngineeringJobs,
   TechJobs,
 } from "./Pages/Courses";
+import InterviewExp from "./Pages/InterviewExp";
 
 const FinalRoutes = () => {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/admin/post/opening" exact component={AdminDashboard} />
         <Route path="/course/mentorship" exact component={Mentorship} />
         <Route path="/course/mockinterview" exact component={MockInterview} />
         <Route path="/course/nontechjobs" exact component={NonTechJobs} />
@@ -25,6 +25,7 @@ const FinalRoutes = () => {
           component={NonEngineeringJobs}
         />
         <Route path="/course/techjobs" exact component={TechJobs} />
+        <Route path="/interview/experience" exact component={InterviewExp} />
       </Switch>
     </BrowserRouter>
   );
