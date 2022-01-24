@@ -33,7 +33,7 @@ export default function InterviewCard(props) {
                 <button className={companyButton}>{props.company}</button>
             </div>
             <div className="flex flex-row justify-center items-center mt-2">
-                {props.image !== "" && <img src={props.image} className="w-[200px] h-[150px]"/>}
+                {props.image !== "" && <img src={props.image} className="w-[200px] h-[150px] mr-8"/>}
                 <div className="flex flex-col w-3/4">
                     <p className="text-[20px] mb-4">{review}{review.length >= 200 && (<span>...</span>)}</p>
                     <button onClick={() => selectInterview(props.title)} className={readMoreButtonClass}>Read More</button>

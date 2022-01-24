@@ -2,13 +2,15 @@ import React from "react";
 import NavComponent from "./Navbar";
 import { useHistory } from "react-router-dom";
 import InterviewCard from "./InterviewCard";
+import {exp} from '../Assets/Data/Experience'
 
 export default function InterviewExpTop() {
+
     const history = useHistory();
     const companyList = ["Google", "Microsoft", "Adobe", "Apple", "Facebook", "Netflix", "LinkedIn", "Twitter", "Tower Research Capital"]
 
     const buttonClass = "bg-[#0c0c8d] hover:bg-[#07075f] text-white font-bold py-2 px-4 rounded mx-4";
-    const companyButton = "bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
+    const companyButton = "my-2 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
 
     const selectCompany = (company) => {
         company = company.toLowerCase();
@@ -39,33 +41,17 @@ export default function InterviewExpTop() {
             </div>
         </div>
         <p className="text-xl text-center font-bold px-4 py-1 border-black border-2 mt-10 w-1/2 mx-auto mb-12">Latest Interview Experiences</p>
-        <InterviewCard
-            title="Cloudera Placement Experience 2021"
-            name="Sukriti Jain"
-            role="placement"
-            place="oncampus"
-            company="Google"
-            image="https://cdn.vox-cdn.com/thumbor/NeSo4JAqv-fFJCIhb5K5eBqvXG4=/7x0:633x417/1200x800/filters:focal(7x0:633x417)/cdn.vox-cdn.com/assets/1311169/mslogo.jpg"
-            content="In the ongoing placement season, many companies visited VIT for internship and full-time offers. Cloudera visited the campus on 8th August, offering internship + FTE offers to final year students. A total of around 570 students were selected based on CGPA and branch. Only Computer Science students were shortlisted."
-        />
-        <InterviewCard
-            title="Cloudera Placement Experience 2021"
-            name="Sukriti Jain"
-            role="placement"
-            place="oncampus"
-            company="Google"
-            image="https://cdn.vox-cdn.com/thumbor/NeSo4JAqv-fFJCIhb5K5eBqvXG4=/7x0:633x417/1200x800/filters:focal(7x0:633x417)/cdn.vox-cdn.com/assets/1311169/mslogo.jpg"
-            content="In the ongoing placement season, many companies visited VIT for internship and full-time offers. Cloudera visited the campus on 8th August, offering internship + FTE offers to final year students. A total of around 570 students were selected based on CGPA and branch. Only Computer Science students were shortlisted."
-        />
-        <InterviewCard
-            title="Cloudera Placement Experience 2021"
-            name="Sukriti Jain"
-            role="placement"
-            place="oncampus"
-            company="Google"
-            image="https://cdn.vox-cdn.com/thumbor/NeSo4JAqv-fFJCIhb5K5eBqvXG4=/7x0:633x417/1200x800/filters:focal(7x0:633x417)/cdn.vox-cdn.com/assets/1311169/mslogo.jpg"
-            content="In the ongoing placement season, many companies visited VIT for internship and full-time offers. Cloudera visited the campus on 8th August, offering internship + FTE offers to final year students. A total of around 570 students were selected based on CGPA and branch. Only Computer Science students were shortlisted."
-        />
+        {exp.map((value) => (
+            <InterviewCard
+                title = {value.title}
+                name = {value.name}
+                role = {value.role}
+                place = {value.place}
+                company = {value.company}
+                content = {value.content}
+                image = {value.image}
+             />
+        ))}
     </div>
   );
 }
