@@ -9,7 +9,7 @@ export default function InterviewExpTop() {
     const history = useHistory();
     const companyList = ["Google", "Microsoft", "Adobe", "Apple", "Facebook", "Netflix", "LinkedIn", "Twitter", "Tower Research Capital"]
 
-    const buttonClass = "bg-[#0c0c8d] hover:bg-[#07075f] text-white font-bold py-2 px-4 rounded mx-4";
+    const buttonClass = "mb-4 bg-[#0c0c8d] hover:bg-[#07075f] text-white font-bold py-2 px-4 rounded mx-4";
     const companyButton = "my-2 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
 
     const selectCompany = (company) => {
@@ -22,18 +22,21 @@ export default function InterviewExpTop() {
     <div>
         <NavComponent />
         <div className="pt-28">
-            <p className="p-6 text-[50px] text-center bg-[#eb924e] mx-10 font-bold rounded-3xl">
+            <p className="hidden sm:block p-6 text-[50px] text-center bg-[#eb924e] mx-10 font-bold rounded-3xl">
                 Read Interview Experience of our students and get ready for your next Interview!
             </p>
+            <p className="block sm:hidden p-6 text-[30px] text-center bg-[#eb924e] mx-10 font-bold rounded-3xl">
+                Interview Experience
+            </p>
         </div>
-        <div className="flex flex-row justify-center items-center mt-10">
+        <div className="flex flex-wrap justify-center items-center mt-10">
             <button onClick={() => history.push("/interview/experience/category/placement")} className={buttonClass}>Placement Interview Experience</button>
             <button onClick={() => history.push("/interview/experience/category/internship")} className={buttonClass}>Internship Interview Experience</button>
             <button onClick={() => history.push("/interview/experience/category/oncampus")} className={buttonClass}>Oncampus</button>
             <button onClick={() => history.push("/interview/experience/category/offcampus")} className={buttonClass}>Offcampus</button>
         </div>
         <div className="flex flex-col justify-center items-center mt-10">
-            <p className="text-2xl font-bold">Company Specific Interviews</p>
+            <p className="text-2xl font-bold text-center">Company Specific Interviews</p>
             <div className="flex flex-wrap justify-center items-center mt-4">
                 {companyList.map((company) => (
                     <button onClick={() => selectCompany(company)} className={companyButton}>{company}</button>
