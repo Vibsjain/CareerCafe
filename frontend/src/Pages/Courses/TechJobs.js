@@ -61,11 +61,11 @@ const TechJobs = () => {
             return (
               <div
                 className={`flex w-full justify-center items-center bg-[#${
-                  index % 4 == 0 || (index + 1) % 4 == 0 ? "10225F" : "EB924E"
+                  index % 4 === 0 || (index + 1) % 4 === 0 ? "10225F" : "EB924E"
                 }] py-4 px-8 rounded-full border border-gray-900`}
               >
                 <h1 className={`text-${
-                  index % 4 == 0 || (index + 1) % 4 == 0 ? "white" : "[#07075F]"
+                  index % 4 === 0 || (index + 1) % 4 === 0 ? "white" : "[#07075F]"
                 } text-md font-bold`}>{point}</h1>
               </div>
             );
