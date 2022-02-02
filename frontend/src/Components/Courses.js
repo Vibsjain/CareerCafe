@@ -1,5 +1,7 @@
 import React from "react";
 import { useHistory, Link } from "react-router-dom";
+import techJob from "../Assets/Images/techJob.jpg";
+import mentorship from "../Assets/Images/mentorship.jpg";
 const CourseCard = (props) => {
   const history = useHistory();
   return (
@@ -13,7 +15,6 @@ const CourseCard = (props) => {
 };
 
 export default function Courses() {
-  const imgs = `https://media.istockphoto.com/photos/hand-touching-brain-of-ai-symbolic-machine-learning-artificial-of-picture-id1274437411?b=1&k=20&m=1274437411&s=170667a&w=0&h=btEXIllRM2Qlj4PusT5tjYDMgxZ2TXFP_o05sTUR_L8=`;
   return (
     <div className="px-10 mb-20 mt-12 sm:mt-0" id="courses">
       <p className="text-5xl font-bold text-center text-[#07075F] mb-10">
@@ -21,23 +22,23 @@ export default function Courses() {
       </p>
       <div className="w-full flex flex-wrap justify-evenly">
         <CourseCard
-          image={imgs}
+          image={techJob}
           title="Tech Jobs - Novice Batch"
           nav="techjobs"
         />
         <CourseCard
-          image={imgs}
+          image={techJob}
           title="Non Tech Jobs Batch"
           nav="nontechjobs"
         />
         <CourseCard
-          image={imgs}
+          image={techJob}
           title="Non Engineering Jobs"
           nav="nonengineeringjobs"
         />
-        <CourseCard image={imgs} title="Mentorship Batch" nav="mentorship" />
+        <CourseCard image={techJob} title="Mentorship Batch" nav="mentorship" />
         <CourseCard
-          image={imgs}
+          image={mentorship}
           title="Mock Interview Batch"
           nav="mockinterview"
         />
