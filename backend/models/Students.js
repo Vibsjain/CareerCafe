@@ -13,6 +13,10 @@ const StudentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  testimonial: {
+    type: String,
+    required: false,
+  }
 });
 
 const Student = mongoose.model("Student", StudentSchema);

@@ -13,11 +13,12 @@ module.exports.getStudents = async (req, res) => {
 
 //Create A Student
 module.exports.createStudent = async (req, res) => {
-  const { name, company, image } = req.body;
+  const { name, company, image, testimonial } = req.body;
   const newStudent = new Student({
     name,
     company,
     image,
+    testimonial,
   });
 
   try {
