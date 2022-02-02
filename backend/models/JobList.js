@@ -1,6 +1,10 @@
-const mongoose = requre("mongoose");
+const mongoose = require("mongoose");
 
 const JobListSchema = new mongoose.Schema({
+  company: {
+    type: String,
+    required: true,
+  },
   title: {
     type: String,
     required: true,
