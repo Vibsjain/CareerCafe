@@ -15,6 +15,7 @@ module.exports.getJobs = async (req, res) => {
 module.exports.createJob = async (req, res) => {
   const { title, logo, desc, criteria, link } = req.body;
   const newJob = new JobList({
+    company,
     title,
     logo,
     desc,
@@ -58,8 +59,9 @@ module.exports.updateJob = async (req, res) => {
       return res.status(404).json({ msg: "Job not found" });
     }
 
-    const { title, logo, desc, criteria, link } = req.body;
+    const { company, title, logo, desc, criteria, link } = req.body;
 
+    job.company = company;
     job.title = title;
     job.logo = logo;
     job.desc = desc;
