@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Instagram from "../Assets/Images/instagram.png";
 import Twitter from "../Assets/Images/twitter.png";
 import Facebook from "../Assets/Images/facebook.png";
 import Telegram from "../Assets/Images/telegram.png";
+import api from "../api/index";
 
 export default function Footer() {
+
+    const [formDetail, setFormDetail] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+    })
+
+    const onSubmit = async (e) => {
+        e.preventDefault();
+        const res = await api.post("/generalquery", formDetail);
+        setFormDetail({
+            name: "",
+            email: "",
+            phone: "",
+            message: ""
+        })
+        console.log(res);
+    }
+
     return (
         <div className="p-6 bg-gray-800 flex flex-row justify-center items-center" id="contact">
             <div className="mb-4 flex flex-col md:flex-row sm:flex-col justify-center items-center w-full">
@@ -17,27 +38,36 @@ export default function Footer() {
                                 id="inline-full-name"
                                 type="text"
                                 placeholder="Name"
+                                value={formDetail.name}
+                                onChange={(e) => setFormDetail({...formDetail, name: e.target.value})}
                             />
                             <input
                                 className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#eb924e] mb-5"
                                 id="inline-full-name"
                                 type="text"
                                 placeholder="Email"
+                                value={formDetail.email}
+                                onChange={(e) => setFormDetail({...formDetail, email: e.target.value})}
                             />
                             <input
                                 className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-[#eb924e] mb-5"
                                 id="inline-full-name"
                                 type="text"
                                 placeholder="Contact Number"
+                                value={formDetail.phone}
+                                onChange={(e) => setFormDetail({...formDetail, phone: e.target.value})}
                             />
                             <textarea
                                 className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-[#eb924e] mb-5"
                                 placeholder="Your Message"
+                                value={formDetail.message}
+                                onChange={(e) => setFormDetail({...formDetail, message: e.target.value})}
                             ></textarea>
                         </div>
                         <button
                             className="bg-[#eb924e] transition-transform duration-500 hover:scale-105 text-white font-bold py-2 px-4 rounded"
                             type="submit"
+                            onClick={(e) => onSubmit(e)}
                         >
                             Submit
                         </button>

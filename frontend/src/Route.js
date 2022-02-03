@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import AdminDashboard from "./Pages/AdminDashboard";
 import HomePage from "./Pages/HomePage";
 import {
   Mentorship,
