@@ -14,8 +14,8 @@ body{
     width: 100vw;
     background-color: #fff;
     box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
-    position: relative;
-    padding: 0px 70px;
+    position: fixed;
+    /* padding: 0px 70px; */
 }
 
 .NavbarLogo{
@@ -27,7 +27,7 @@ body{
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 70vw;
 }
 
