@@ -13,7 +13,7 @@ module.exports.getJobs = async (req, res) => {
 
 //Post a Job
 module.exports.createJob = async (req, res) => {
-  const { title, logo, desc, criteria, link } = req.body;
+  const { company,  title, logo, desc, criteria, link } = req.body;
   const newJob = new JobList({
     company,
     title,
