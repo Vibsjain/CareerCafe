@@ -21,7 +21,7 @@ export default function CompanyInterviewExp() {
       <p className="text-[50px] font-bold text-center underline pt-28">
         {name} Interview Experiences
       </p>
-      {data.length === 0 && <NoExp />}
+      {data.length === 0 && <NoExp first="No Experience to show!!!" second="We will add them soon." />}
       {data.length > 0 &&
         data.map((value) => {
           return (

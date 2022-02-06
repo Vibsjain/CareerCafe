@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import NavComponent from '../../Components/Navbar';
 import { useHistory } from "react-router-dom";
 import api from '../../api/index';
+import NoExp from '../../Components/NoExp';
+import Footer from '../../Components/Footer';
 
 export default function AllJobs() {
     
@@ -49,6 +51,14 @@ export default function AllJobs() {
                 ))}
             </div>
         </div>
+        {(jobData && jobData.length > 0) ? (
+            jobData.map((value) => (
+                <div>Hello</div>
+            ))
+        ) : (
+            <NoExp first="No Job Opening for now" second="We are searching, will add them soon" />
+        )}
+        <Footer />
       </div>
   );
 }
