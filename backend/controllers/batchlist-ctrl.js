@@ -34,14 +34,13 @@ module.exports.createBatch = async (req, res) => {
 //Delete A Batch
 module.exports.deleteBatch = async (req, res) => {
   try {
-    const batch = await BatchList.findById(req.params.id);
+    const batch = await BatchList.findById({ _id: req.params.id });
 
     if (!batch) {
       return res.status(404).json({ msg: "Batch not found" });
     }
 
     await batch.remove();
-
     res.json({ msg: "Batch removed" });
   } catch (err) {
     console.error(err.message);
@@ -57,7 +56,6 @@ module.exports.updateBatch = async (req, res) => {
     if (!batch) {
       return res.status(404).json({ msg: "Batch not found" });
     }
-
     const { name, start, end, duration, desc } = req.body;
 
     batch.name = name;
