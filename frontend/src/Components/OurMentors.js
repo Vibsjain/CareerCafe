@@ -31,14 +31,16 @@ const MentorCard = (props) => {
 
 export default function Mentors() {
   const [mentors, setMentors] = useState([]);
+  const [change, setChange] = useState(false);
   const getMentors = async () => {
     const response = await api.get("/mentors");
     setMentors(response.data);
     console.log(mentors);
+    // setChange(!change);
   };
   useEffect(() => {
     getMentors();
-  }, []);
+  }, [change]);
 
   const responsive = {
     superLargeDesktop: {
@@ -73,12 +75,15 @@ export default function Mentors() {
           removeArrowOnDeviceType={["mobile"]}
           containerClass="carousel-container"
         >
-          <MentorCard
-            image={User}
-            mentorName="Rishabh"
-            mentorCompany="google"
-            cImage={Google}
-          />
+          {mentors &&
+            mentors.map((item, index) => {
+              <MentorCard
+                image={item.userImage}
+                mentorName={item.name}
+                mentorCompany={item.company}
+                cImage={item.logo}
+              />;
+            })}
         </Carousel>
       </div>
     </div>

@@ -4,28 +4,29 @@ const Mentor = require("../models/Mentors");
 // @desc    Get all mentors
 // @access  Public
 module.exports.getMentors = async (req, res) => {
-    try {
-        const mentors = await Mentor.find();
-        res.json(mentors);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send("Server Error");
-    }
+  try {
+    const mentors = await Mentor.find();
+    res.json(mentors);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
 };
 
 module.exports.createMentor = async (req, res) => {
-    const { name, company, userImage } = req.body;
-    const newMentor = new Mentor({
-        name,
-        company,
-        userImage,
-    });
+  const { name, logo, company, userImage } = req.body;
+  const newMentor = new Mentor({
+    name,
+    logo,
+    company,
+    userImage,
+  });
 
-    try {
-        const mentor = await newMentor.save();
-        res.json(mentor);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send("Server Error");
-    }
+  try {
+    const mentor = await newMentor.save();
+    res.json(mentor);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
 };
