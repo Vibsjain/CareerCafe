@@ -13,15 +13,11 @@ module.exports.getGeneralQueries = async (req, res) => {
 
 //Post a General Query
 module.exports.createGeneralQuery = async (req, res) => {
-  const { name, email, phone, degree, college, passYear, companies, message } = req.body;
+  const { name, email, phone, message } = req.body;
   const newGeneralQuery = new GeneralQuery({
     name,
     email,
     phone,
-    degree,
-    college,
-    passYear,
-    companies,
     message,
   });
 

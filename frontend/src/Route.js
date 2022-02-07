@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import AdminDashboard from "./Pages/AdminDashboard";
 import HomePage from "./Pages/HomePage";
 import {
   Mentorship,
@@ -9,12 +8,17 @@ import {
   NonEngineeringJobs,
   TechJobs,
 } from "./Pages/Courses";
+
+// Interview Experience routes
 import InternshipInterviewExp from "./Pages/InterviewExperience/InternshipInterviewExp";
 import PlacementInterviewExp from "./Pages/InterviewExperience/PlacementInterviewExp";
 import InterviewExp from "./Pages/InterviewExperience/InterviewExp";
 import OncampusInterviewExp from "./Pages/InterviewExperience/OncampusInterviewExp";
 import OffcampusInterviewExp from "./Pages/InterviewExperience/OffcampusInterviewExp";
 import CompanyInterviewExp from "./Pages/InterviewExperience/CompanyInterviewExp";
+
+// Job Opening Routes
+import AllJobs from "./Pages/JobOpening/AllJobs";
 
 const FinalRoutes = () => {
   return (
@@ -52,6 +56,7 @@ const FinalRoutes = () => {
           component={OffcampusInterviewExp}
         />
         <Route path="/interview/experience/company/:companyName" exact component={CompanyInterviewExp} />
+        <Route path="/job/opening" exact component={AllJobs} />
       </Switch>
     </BrowserRouter>
   );
