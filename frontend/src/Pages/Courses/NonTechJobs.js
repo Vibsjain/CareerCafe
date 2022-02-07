@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../Components/Footer";
 import NavComponent from "../../Components/Navbar";
 import BatchQueryForm from "../../Components/BatchQueryForm";
@@ -19,7 +19,9 @@ const NonTechJobs = () => {
     "Off campus placement assistance",
     "Resume formation and up gradation",
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div>
       <NavComponent />
