@@ -10,7 +10,7 @@ const BatchQuerySchema = new mongoose.Schema({
     required: true,
   },
   phone: {
-    type: Number,
+    type: String,
     required: true,
   },
   degree: {
@@ -22,11 +22,7 @@ const BatchQuerySchema = new mongoose.Schema({
     required: true,
   },
   passYear: {
-    type: Number,
-    required: true,
-  },
-  companies: {
-    type: Array,
+    type: String,
     required: true,
   },
   message: {

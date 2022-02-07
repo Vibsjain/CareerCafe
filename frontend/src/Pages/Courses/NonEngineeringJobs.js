@@ -1,12 +1,14 @@
 import React from "react";
+import Footer from "../../Components/Footer";
 import NavComponent from "../../Components/Navbar";
+import BatchQueryForm from "../../Components/BatchQueryForm";
 
 const POINTS = [
   "Resume up gradation",
   "Aptitude and reasoning live classes",
   "Mock interviews by industrial experts",
   "Group discussion and Communication classes",
-  "Resume formation and up gradation"
+  "Resume formation and up gradation",
 ];
 
 const NonEngineeringJobs = () => {
@@ -14,7 +16,9 @@ const NonEngineeringJobs = () => {
     <div>
       <NavComponent />
       <div className=" flex flex-col pt-12 w-full justify-center items-center min-h-[100vh] gap-y-4 ">
-        <h1 className="typewriter text-7xl font-bold pb-4">Non Engineering Jobs</h1>
+        <h1 className="typewriter text-7xl font-bold pb-4">
+          Non Engineering Jobs
+        </h1>
         <h1 className="text-3xl font-semibold text-gray-500">
           In IT Companies
         </h1>
@@ -31,7 +35,10 @@ const NonEngineeringJobs = () => {
         id="description"
       >
         <p className="text-3xl text-center">
-        Placements in IT Companies aren’t confined to engineering fields only. You can secure offer letters before appearing for your final exams even if you belong to management, commerce, architecture, design, and other disciplines.
+          Placements in IT Companies aren’t confined to engineering fields only.
+          You can secure offer letters before appearing for your final exams
+          even if you belong to management, commerce, architecture, design, and
+          other disciplines.
         </p>
         <p className="text-3xl text-center">
           An aware student remains ready with the knockout punch, in the very
@@ -49,14 +56,22 @@ const NonEngineeringJobs = () => {
                   index % 4 === 0 || (index + 1) % 4 === 0 ? "10225F" : "EB924E"
                 }] py-4 px-8 rounded-full border border-gray-900`}
               >
-                <h1 className={`text-${
-                  index % 4 === 0 || (index + 1) % 4 === 0 ? "white" : "[#07075F]"
-                } text-md font-bold`}>{point}</h1>
+                <h1
+                  className={`text-${
+                    index % 4 === 0 || (index + 1) % 4 === 0
+                      ? "white"
+                      : "[#07075F]"
+                  } text-md font-bold`}
+                >
+                  {point}
+                </h1>
               </div>
             );
           })}
         </div>
       </div>
+      <BatchQueryForm />
+      <Footer/>
     </div>
   );
 };

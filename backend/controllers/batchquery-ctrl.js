@@ -19,7 +19,6 @@ module.exports.postBatchQuery = async (req, res) => {
     degree: req.body.degree,
     college: req.body.college,
     passYear: req.body.passYear,
-    companies: req.body.companies,
     message: req.body.message,
   });
   try {
