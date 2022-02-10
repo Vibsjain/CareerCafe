@@ -11,17 +11,24 @@ export default function NavComponent() {
     <>
       <nav className="Navbar">
         <a>
-          <img onClick={() => history.push("/")} className="NavbarLogo cursor-pointer" src={logo} alt="" />
+          <img
+            onClick={() => history.push("/")}
+            className="NavbarLogo cursor-pointer"
+            src={logo}
+            alt=""
+          />
         </a>
         <ul className="NavbarLinks">
           <li className="NavbarDropdown">
             <h1 onClick={() => history.push("/")}>Home</h1>
           </li>
           <li className="NavbarDropdown">
-            <a href="#courses">Placement Courses</a>
+            <h1 onClick={() => history.push("/#courses")}>Placement Courses</h1>
           </li>
           <li className="NavbarDropdown">
-            <h1 onClick={() => history.push("/interview/experience")}>Interview Experience</h1>
+            <h1 onClick={() => history.push("/interview/experience")}>
+              Interview Experience
+            </h1>
           </li>
           {/*<li className="NavbarDropdown">
             <a href="#">Notes</a>
@@ -32,7 +39,9 @@ export default function NavComponent() {
           <li className="NavbarDropdown">
             <a href="#">Blogs</a>
   </li>*/}
-          <li className="NavbarDropdown"><a href="#contact">Contact Us</a></li>
+          <li className="NavbarDropdown">
+            <a href="#contact">Contact Us</a>
+          </li>
         </ul>
         <div className="flex lg:hidden">
           {!isOpen ? (
