@@ -8,24 +8,18 @@ import Footer from "../../Components/Footer";
 const Card = ({ item }) => {
   const history = useHistory();
   const companyButton =
-    "my-2 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
+    "my-5 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
   return (
-    <div className="w-full min-h-[35vh] py-8 px-36   ">
-      <div className="w-full flex flex-col md:flex-row bg-[#eb924e] min-h-[35vh] rounded-xl">
-        <div className="w-3/12 flex justify-center items-center h-[35vh]">
-          <img src={item.logo} className="w-36 h-36"></img>
+    <div>
+      <div className="border-2 border-[#07075f] rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)] my-20 w-3/4 mx-auto flex flex-wrap justify-center items-center">
+        <div className="w-3/12 flex justify-center items-center">
+          <img src={item.logo} className="w-40 h-40" />
         </div>
-        <div className="w-[1px] h-[30vh] bg-gray-600 mt-4"></div>
-        <div className="flex flex-col justify-around items-center w-9/12 px-8 py-4">
-          <h1 className="text-5xl text-white font-bold mt-4 text-center">
-            {item.company} ({item.title})
+        <div className="w-2/3 flex-col">
+          <h1 className="py-5 text-5xl text-black font-bold mt-4">
+            {item.company} - {item.title}
           </h1>
-          <button
-            onClick={() => history.push("/job/opening/" + item._id)}
-            className={companyButton}
-          >
-            Read More
-          </button>
+          <button className={companyButton}>Read More</button>
         </div>
       </div>
     </div>
