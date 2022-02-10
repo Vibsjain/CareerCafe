@@ -6,14 +6,9 @@ export default function JobDetails() {
   const { id } = useParams();
   const [jobData, setJobData] = useState([]);
   const setData = async () => {
-    const res = await api.get("/joblist");
+    const res = await api.get("/joblist/" + id);
     const response = res.data;
-    for (let i = 0; i < response.length; i++) {
-      if (response[i]._id == id) {
-        setJobData(response[i]);
-        break;
-      }
-    }
+    setJobData(response);
   };
 
   useEffect(() => {

@@ -19,7 +19,12 @@ const Card = ({ item }) => {
           <h1 className="py-5 text-5xl text-black font-bold mt-4">
             {item.company} - {item.title}
           </h1>
-          <button className={companyButton}>Read More</button>
+          <button
+            className={companyButton}
+            onClick={() => history.push("/job/opening/" + item._id)}
+          >
+            Read More
+          </button>
         </div>
       </div>
     </div>

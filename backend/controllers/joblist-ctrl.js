@@ -11,9 +11,20 @@ module.exports.getJobs = async (req, res) => {
   }
 };
 
+//Get single job using id
+module.exports.getJob = async (req, res) => {
+  try {
+    const job = await JobList.findById(req.params.id);
+    res.json(job);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+};
+
 //Post a Job
 module.exports.createJob = async (req, res) => {
-  const { company,  title, logo, desc, criteria, link } = req.body;
+  const { company, title, logo, desc, criteria, link } = req.body;
   const newJob = new JobList({
     company,
     title,
