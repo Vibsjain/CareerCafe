@@ -11,7 +11,11 @@ const CourseCard = (props) => {
   return (
     <Link to={`/course/${props.nav}`}>
       <div className="w-[19rem] sm:w-[23rem] flex flex-col items-center justify-center rounded-lg m-2 mb-20 border-black border cursor-pointer  hover:shadow-2xl hover:shadow-[#eb924e]">
-        <img className="w-full rounded-t-lg h-[200px] " src={props.image} alt="" />
+        <img
+          className="w-full rounded-t-lg h-[200px] "
+          src={props.image}
+          alt=""
+        />
         <p className="text-2xl font-semibold p-4 text-center">{props.title}</p>
         <p className="text-center px-4 pb-2">{props.desc}</p>
       </div>

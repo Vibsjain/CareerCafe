@@ -33,15 +33,6 @@ export default function NavComponent() {
           <li className="NavbarDropdown">
             <h1 onClick={() => history.push("/job/opening")}>Job Openings</h1>
           </li>
-          {/*<li className="NavbarDropdown">
-            <a href="#">Notes</a>
-          </li>
-          <li className="NavbarDropdown">
-            <a href="#">Placement Papers</a>
-          </li>
-          <li className="NavbarDropdown">
-            <a href="#">Blogs</a>
-  </li>*/}
           <li className="NavbarDropdown">
             <a href="#contact">Contact Us</a>
           </li>
