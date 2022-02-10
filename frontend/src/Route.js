@@ -8,12 +8,18 @@ import {
   NonEngineeringJobs,
   TechJobs,
 } from "./Pages/Courses";
+
+// Interview Experience routes
 import InternshipInterviewExp from "./Pages/InterviewExperience/InternshipInterviewExp";
 import PlacementInterviewExp from "./Pages/InterviewExperience/PlacementInterviewExp";
 import InterviewExp from "./Pages/InterviewExperience/InterviewExp";
 import OncampusInterviewExp from "./Pages/InterviewExperience/OncampusInterviewExp";
 import OffcampusInterviewExp from "./Pages/InterviewExperience/OffcampusInterviewExp";
 import CompanyInterviewExp from "./Pages/InterviewExperience/CompanyInterviewExp";
+
+// Job Opening Routes
+import AllJobs from "./Pages/JobOpening/AllJobs";
+import JobDetails from "./Pages/JobOpening/JobDetails";
 
 const FinalRoutes = () => {
   return (
@@ -50,7 +56,13 @@ const FinalRoutes = () => {
           exact
           component={OffcampusInterviewExp}
         />
-        <Route path="/interview/experience/company/:companyName" exact component={CompanyInterviewExp} />
+        <Route
+          path="/interview/experience/company/:companyName"
+          exact
+          component={CompanyInterviewExp}
+        />
+        <Route path="/job/opening" exact component={AllJobs} />
+        <Route path="/job/opening/:id" exact component={JobDetails} />
       </Switch>
     </BrowserRouter>
   );

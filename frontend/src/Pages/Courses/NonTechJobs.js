@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../Components/Footer";
 import NavComponent from "../../Components/Navbar";
+import BatchQueryForm from "../../Components/BatchQueryForm";
 
 const NonTechJobs = () => {
   const POINTS = [
@@ -18,7 +19,9 @@ const NonTechJobs = () => {
     "Off campus placement assistance",
     "Resume formation and up gradation",
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div>
       <NavComponent />
@@ -74,63 +77,7 @@ const NonTechJobs = () => {
           })}
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center mb-20">
-        <h3 className="text-4xl py-4 text-[#10225F] text-center text-bold mb-4">
-          Still confused and have questions about batch?
-        </h3>
-        <form action="#" className="flex flex-col justify-center">
-          <div className="mb-4">
-            <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-[#EB924E] leading-tight focus:outline-none focus:bg-white focus:border-[#10225F] mb-5"
-              id="inline-full-name"
-              type="text"
-              placeholder="Name"
-            />
-            <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#10225F] mb-5"
-              id="inline-full-name"
-              type="text"
-              placeholder="Email"
-            />
-            <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-[#10225F] mb-5"
-              id="inline-full-name"
-              type="text"
-              placeholder="Contact Number"
-            />
-            <div className="flex flex-row justify-center w-full items-center">
-              <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-1/3 py-2 px-4 text-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-[#10225F] mb-5 mr-2"
-                id="inline-full-name"
-                type="text"
-                placeholder="Degree"
-              />
-              <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-1/3 py-2 px-4 text-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-[#10225F] mb-5 mr-2"
-                id="inline-full-name"
-                type="text"
-                placeholder="College Name"
-              />
-              <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-1/3 py-2 px-4 text-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-[#10225F] mb-5"
-                id="inline-full-name"
-                type="text"
-                placeholder="Passing Year"
-              />
-            </div>
-            <textarea
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-[#10225F] mb-5"
-              placeholder="Your Message"
-            ></textarea>
-          </div>
-          <button
-            className="bg-[#eb924e] transition-transform duration-500 hover:scale-105 text-white font-bold py-2 px-4 rounded"
-            type="submit"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
+      <BatchQueryForm />
       <Footer />
     </div>
   );

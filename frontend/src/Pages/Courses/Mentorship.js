@@ -1,24 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Footer from "../../Components/Footer";
 import NavComponent from "../../Components/Navbar";
+import BatchQueryForm from "../../Components/BatchQueryForm";
 
 const Mentorship = () => {
-
   const POINTS = [
     "Live DSA specific 1:1  mock interviews with industrial experts from Amazon, GoldmanSachs etc",
     "50+ (Tech & Apti) MCQ Tests",
     "Mock Coding tests",
     "HR Round Preparation",
-    "Resume formation and up gradation"
-  ]
-
-
+    "Resume formation and up gradation",
+  ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div>
       <NavComponent />
       <div className=" flex flex-col pt-12 w-full justify-center items-center min-h-[100vh] gap-y-4 ">
         <h1 className="typewriter text-9xl font-bold">Mentorship Batch</h1>
         <h1 className="text-3xl font-semibold text-gray-500">
-          for top product based companies 
+          for top product based companies
         </h1>
         <a href="#description">
           <button className="bg-blue-500 hover:bg-blue-400 border-b-4 border-blue-700 hover:border-blue-500 text-white text-center py-2 px-4 rounded">
@@ -35,14 +37,22 @@ const Mentorship = () => {
                   index % 4 === 0 || (index + 1) % 4 === 0 ? "10225F" : "EB924E"
                 }] py-4 px-8 rounded-full border border-gray-900`}
               >
-                <h1 className={`text-${
-                  index % 4 === 0 || (index + 1) % 4 === 0 ? "white" : "[#07075F]"
-                } text-md font-bold`}>{point}</h1>
+                <h1
+                  className={`text-${
+                    index % 4 === 0 || (index + 1) % 4 === 0
+                      ? "white"
+                      : "[#07075F]"
+                  } text-md font-bold`}
+                >
+                  {point}
+                </h1>
               </div>
             );
           })}
         </div>
       </div>
+      <BatchQueryForm />
+      <Footer />
     </div>
   );
 };

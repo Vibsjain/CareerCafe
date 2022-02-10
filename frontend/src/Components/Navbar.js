@@ -30,6 +30,9 @@ export default function NavComponent() {
               Interview Experience
             </h1>
           </li>
+          <li className="NavbarDropdown">
+            <h1 onClick={() => history.push("/job/opening")}>Job Openings</h1>
+          </li>
           {/*<li className="NavbarDropdown">
             <a href="#">Notes</a>
           </li>

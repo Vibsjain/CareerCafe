@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Footer from "../../Components/Footer";
 import NavComponent from "../../Components/Navbar";
+import BatchQueryForm from "../../Components/BatchQueryForm";
 import "../../Assets/CSS/Common.css";
 // #10225F
 const TechJobs = () => {
@@ -18,6 +20,9 @@ const TechJobs = () => {
     "Off campus placement assistance ",
     "Resume formation and up gradation",
   ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="">
       <NavComponent />
@@ -64,14 +69,22 @@ const TechJobs = () => {
                   index % 4 === 0 || (index + 1) % 4 === 0 ? "10225F" : "EB924E"
                 }] py-4 px-8 rounded-full border border-gray-900`}
               >
-                <h1 className={`text-${
-                  index % 4 === 0 || (index + 1) % 4 === 0 ? "white" : "[#07075F]"
-                } text-md font-bold`}>{point}</h1>
+                <h1
+                  className={`text-${
+                    index % 4 === 0 || (index + 1) % 4 === 0
+                      ? "white"
+                      : "[#07075F]"
+                  } text-md font-bold`}
+                >
+                  {point}
+                </h1>
               </div>
             );
           })}
         </div>
       </div>
+      <BatchQueryForm />
+      <Footer />
     </div>
   );
 };
