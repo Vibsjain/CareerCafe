@@ -52,7 +52,7 @@ export default function NavComponent() {
         </div>
       </nav>
       {isOpen && (
-        <div className="sidebar fixed right-0 top-0 w-[50%] h-full  z-50">
+        <div className="sidebar fixed right-0 top-0 w-[60%] h-full  z-50">
           <i
             className="fa fa-close text-3xl ml-4 mt-4 text-white"
             onClick={() => setIsOpen(false)}

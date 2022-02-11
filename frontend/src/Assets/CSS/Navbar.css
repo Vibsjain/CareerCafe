@@ -93,6 +93,6 @@ body {
         justify-content: space-between;
     }
     .NavbarLinks {
-        display: none;
+        display: none !important;
     }
 }

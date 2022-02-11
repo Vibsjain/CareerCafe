@@ -9,46 +9,29 @@ import Students from "../Components/Students";
 import Footer from "../Components/Footer";
 import Aboutus from "../Components/Aboutus";
 import Different from "../Components/Different";
+import hero from "../Assets/Images/banner.png";
 
 export default function HomePage() {
   AOS.init({
     duration: 1000,
   });
-  
+  const buttonClass = `text-[#B76F4C] text-sm md:text-lg font-bold px-2 mx-2 my-2 md:my-4 py-2 bg-[#462895] rounded-full`;
   return (
     <div>
       <NavComponent />
-      <div className="homepagetopdiv">
-        <div className="homepagetopleft">
-          <h1 className="homepagetoptext">
-            Let's build <br /> your Career
+      <div className="w-full py-8 h-[100vh] flex flex-col-reverse md:flex-row">
+        <div className="w-full flex flex-col justify-center items-center">
+          <h1 className="text-2xl md:text-4xl font-extrabold">
+            Let's Build Your <span>Carrer</span>
           </h1>
+          <div className="flex w-full flex-col md:flex-row justify-center items-center gap-x-4 my-4">
+            <h1 className={buttonClass}>Live Classes</h1>
+            <h1 className={buttonClass}>Mock Interviews</h1>
+            <h1 className={buttonClass}>Project Mentroship</h1>
+          </div>
         </div>
-        <div className="visionBox">
-          <div className="visionDivOne">
-            <div className="visionCard orange blueText">
-              <p className="visionText">
-                Live <br /> Coding <br /> Classes
-              </p>
-            </div>
-            <div className="visionCard blue orangeText">
-              <p className="visionText">
-                Mock <br /> Interviews
-              </p>
-            </div>
-          </div>
-          <div className="visionDivTwo">
-            <div className="visionCard blue orangeText">
-              <p className="visionText">
-                Live <br /> Aptitude <br /> Classes
-              </p>
-            </div>
-            <div className="visionCard orange blueText">
-              <p className="visionText">
-                Mentorship <br /> in <br /> Developing <br /> Project
-              </p>
-            </div>
-          </div>
+        <div className="w-full h-[100vh] flex justify-center items-center ">
+          <img src={hero} alt="hero"></img>
         </div>
       </div>
       <div>
@@ -69,7 +52,6 @@ export default function HomePage() {
       <div>
         <Footer />
       </div>
-      
     </div>
   );
 }

@@ -14,6 +14,7 @@ export default function JobDetails() {
   };
 
   useEffect(() => {
+    window.scroll(0, 0);
     setData();
   }, []);
   return (
@@ -29,17 +30,17 @@ export default function JobDetails() {
       <div className="min-h-[100vh] flex items-center py-12 flex-col">
         <h1 className="text-4xl font-bold text-center">Job Description</h1>
         <div className="flex w-full justify-center items-center min-h-[70vh]">
-          <div className="border px-8 py-12 border-2 border-[#07075f] rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)]">
+          <div className="px-8 py-12 border-2 border-[#07075f] rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)]">
             <h1>{jobData.desc}</h1>
           </div>
         </div>
         <div className="min-h-[100vh] flex items-center py-12 flex-col">
-        <h1 className="text-4xl font-bold text-center">Criteria</h1>
-        <div className="flex w-full justify-center items-center min-h-[70vh]">
-          <div className="border px-8 py-12 border-2 border-[#07075f] rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)]">
-            <h1>{jobData.criteria}</h1>
+          <h1 className="text-4xl font-bold text-center">Criteria</h1>
+          <div className="flex w-full justify-center items-center min-h-[70vh]">
+            <div className="px-8 py-12 border-2 border-[#07075f] rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)]">
+              <h1>{jobData.criteria}</h1>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <Footer />
