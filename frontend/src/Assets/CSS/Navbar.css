@@ -86,7 +86,7 @@ body {
     backdrop-filter: blur(5px);
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1180px) {
     .Navbar{
         width:100%;
         padding:0px 10px 0px 0px;

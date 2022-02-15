@@ -67,15 +67,6 @@ export default function NavComponent() {
             <li>
               <h1 className={`${textClass}`}>Interview Experience</h1>
             </li>
-            {/*<li>
-              <h1 className={`${textClass}`}>Notes</h1>
-            </li>
-            <li>
-              <h1 className={`${textClass}`}>Placement Papers</h1>
-            </li>
-            <li>
-              <h1 className={`${textClass}`}>Blogs</h1>
-            </li>*/}
             <li>
               <h1 className={`${textClass}`}>Contact Us</h1>
             </li>

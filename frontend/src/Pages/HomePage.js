@@ -21,8 +21,11 @@ export default function HomePage() {
       <NavComponent />
       <div className="w-full py-8 h-[100vh] flex flex-col-reverse md:flex-row">
         <div className="w-full flex flex-col justify-center items-center">
-          <h1 className="text-2xl md:text-4xl font-extrabold">
-            Let's Build Your <span>Carrer</span>
+          <h1 className="text-4xl font-semibold sm:font-bold">
+            Let's Build Your{" "}
+            <span className="font-semibold sm:font-bold text-[#eb924e]">
+              Carrer
+            </span>
           </h1>
           <div className="flex w-full flex-col md:flex-row justify-center items-center gap-x-4 my-4">
             <h1 className={buttonClass}>Live Classes</h1>
