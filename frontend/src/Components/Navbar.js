@@ -25,11 +25,11 @@ export default function NavComponent() {
           <li className="NavbarDropdown">
             <h1 onClick={() => history.push("/#courses")}>Placement Courses</h1>
           </li>
-          <li className="NavbarDropdown">
+          {/* <li className="NavbarDropdown">
             <h1 onClick={() => history.push("/interview/experience")}>
               Interview Experience
             </h1>
-          </li>
+          </li> */}
           <li className="NavbarDropdown">
             <h1 onClick={() => history.push("/job/opening")}>Job Openings</h1>
           </li>
@@ -59,16 +59,38 @@ export default function NavComponent() {
           ></i>
           <ul className="flex flex-col justify-end items-center gap-y-3">
             <li>
-              <h1 className={`${textClass}`}>Home</h1>
+              <h1 className={`${textClass}`} onClick={() => history.push("/")}>
+                Home
+              </h1>
             </li>
             <li>
-              <h1 className={`${textClass}`}>Placement Courses</h1>
+              <h1
+                className={`${textClass}`}
+                onClick={() => history.push("/#courses")}
+              >
+                Placement Courses
+              </h1>
             </li>
-            <li>
+            {/* <li>
               <h1 className={`${textClass}`}>Interview Experience</h1>
+            </li> */}
+            <li>
+              <h1
+                className={`${textClass}`}
+                onClick={() => history.push("/job/opening")}
+              >
+                Job Openings
+              </h1>
             </li>
             <li>
-              <h1 className={`${textClass}`}>Contact Us</h1>
+              <a href="#contact">
+                <h1
+                  className={`${textClass}`}
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  Contact Us
+                </h1>
+              </a>
             </li>
           </ul>
         </div>

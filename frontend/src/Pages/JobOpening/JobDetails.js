@@ -13,6 +13,18 @@ export default function JobDetails() {
     setJobData(response);
   };
 
+  const ExpressDiv = (props) => {
+    return (
+      <div className="w-full flex flex-col mt-12">
+        <h1 className="text-center text-3xl sm:text-5xl font-extrabold">
+          {props.title}
+        </h1>
+        <div className="py-4 min-h-[60vh] border my-4 mx-8 border-2 p-4 border-[#07075f] rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)]">
+          <p className="text-lg sm:text-xl text-justify">{props.data}</p>
+        </div>
+      </div>
+    );
+  };
   useEffect(() => {
     window.scroll(0, 0);
     setData();
@@ -21,28 +33,23 @@ export default function JobDetails() {
     <>
       <Navbar />
       <div className="py-8 h-[100vh] w-full flex justify-center items-center flex-col">
-        <img src={jobData.logo} alt="logo" className="w-72 h-72"></img>
-        <h1 className="text-8xl font-extrabold">{jobData.company}</h1>
+        <img
+          src={jobData.logo}
+          alt="logo"
+          className="w-60 md:w-72 h-60 md:h-72"
+        ></img>
+        <h1 className="text-5xl md:text-8xl font-extrabold">
+          {jobData.company}
+        </h1>
         <h1 className="text-2xl font-medium underline py-8">
           Role: {jobData.title}
         </h1>
       </div>
-      <div className="min-h-[100vh] flex items-center py-12 flex-col">
-        <h1 className="text-4xl font-bold text-center">Job Description</h1>
-        <div className="flex w-full justify-center items-center min-h-[70vh]">
-          <div className="px-8 py-12 border-2 border-[#07075f] rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)]">
-            <h1>{jobData.desc}</h1>
-          </div>
-        </div>
-        <div className="min-h-[100vh] flex items-center py-12 flex-col">
-          <h1 className="text-4xl font-bold text-center">Criteria</h1>
-          <div className="flex w-full justify-center items-center min-h-[70vh]">
-            <div className="px-8 py-12 border-2 border-[#07075f] rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)]">
-              <h1>{jobData.criteria}</h1>
-            </div>
-          </div>
-        </div>
+      <div className="min-h-[100vh] flex flex-col md:flex-row justify-center py-12 gap-y-12">
+        <ExpressDiv title="Job Description" data={jobData.desc} />
+        <ExpressDiv title="Job Criteria" data={jobData.criteria} />
       </div>
+      {/* <ExpressDiv title="Criteria" criteria={jobData.criteria} /> */}
       <Footer />
     </>
   );

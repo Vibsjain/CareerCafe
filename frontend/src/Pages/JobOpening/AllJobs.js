@@ -11,12 +11,12 @@ const Card = ({ item }) => {
     "my-5 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
   return (
     <div>
-      <div className="border-2 border-[#07075f] rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)] my-20 w-3/4 mx-auto flex flex-wrap justify-center items-center">
-        <div className="w-3/12 flex justify-center items-center">
-          <img src={item.logo} className="w-40 h-40" />
+      <div className="border-2 border-[#07075f] flex flex-col md:flex-row rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)] my-20 w-3/4 mx-auto flex flex-wrap justify-center items-center">
+        <div className="w-full md:w-3/12 flex justify-center items-center">
+          <img src={item.logo} className="w-28 md:w-40 h-28 md:h-40" />
         </div>
-        <div className="w-2/3 flex-col">
-          <h1 className="py-5 text-5xl text-black font-bold mt-4">
+        <div className="flex justify-center items-center w-full md:w-2/3 flex-col px-4">
+          <h1 className="py-5 text-3xl md:text-5xl text-center text-black font-bold mt-4">
             {item.company} - {item.title}
           </h1>
           <button
