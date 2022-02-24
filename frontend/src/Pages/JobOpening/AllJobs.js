@@ -46,15 +46,30 @@ export default function AllJobs() {
 
   const history = useHistory();
   const companyList = [
-    "Google",
-    "Microsoft",
+    "Deloitte",
+    "Amazon",
+    "American Express",
+    "Hashedin",
+    "Quark",
+    "Edifecs",
+    "Mediatek",
     "Adobe",
-    "Apple",
-    "Facebook",
-    "Netflix",
-    "LinkedIn",
-    "Twitter",
-    "Tower Research Capital",
+    "Accolite",
+    "Morgan Stanley",
+    "GoldmanSachs",
+    "TCS NQT",
+    "TCS Digital",
+    "Wipro",
+    "Samsung",
+    "Fareye",
+    "LTI",
+    "Capgemini",
+    "Cognizant",
+    "Accenture",
+    "KPMG",
+    "Band Y",
+    "INDUS VALLEY PARTNERS",
+    "Amdocs",
   ];
 
   const companyButton =
