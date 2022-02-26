@@ -79,14 +79,14 @@ export default function Footer() {
                             Navigate
                         </h3>
                         <ul>
-                            <li className="mb-2">
+                            {/* <li className="mb-2">
                                 <a
                                     href="#"
                                     className="text-gray-300 text-[20px] hover:text-gray-400"
                                 >
                                     Blogs
                                 </a>
-                            </li>
+                            </li>*/}
                             <li className="mb-2">
                                 <a
                                     href="#"
@@ -103,14 +103,14 @@ export default function Footer() {
                                     Courses
                                 </a>
                             </li>
-                            <li className="mb-2">
+                            {/* <li className="mb-2">
                                 <a
                                     href="#"
                                     className="text-gray-300 text-[20px] hover:text-gray-400"
                                 >
                                     Company
                                 </a>
-                            </li>
+                            </li> */}
                             <li className="mb-2">
                                 <a
                                     href="#"

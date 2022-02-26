@@ -34,7 +34,7 @@ const Card = ({ item }) => {
 export default function AllJobs() {
   const [jobData, setJobData] = useState([]);
 
-  const getData = async () => {
+  const getData = async () => { 
     const res = await api.get("/joblist");
     setJobData(res.data);
     console.log(jobData);
@@ -42,6 +42,7 @@ export default function AllJobs() {
 
   useEffect(() => {
     getData();
+    window.scrollTo(0, 0);
   }, []);
 
   const history = useHistory();
