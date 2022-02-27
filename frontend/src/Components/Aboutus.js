@@ -4,8 +4,8 @@ export default function Aboutus() {
   const HomeImage = `https://res.cloudinary.com/dumgn8uvd/image/upload/v1644893552/careerCafeAboutUs_d0asf4.jpg`;
   return (
     <div className="flex w-full justify-center items-center px-4">
-      <div className="justify-end w-full hidden sm:flex">
-        <img src={HomeImage} />
+      <div className="justify-end w-full hidden sm:flex shadow-xl">
+        <img src={HomeImage} className="rounded-2xl" />
       </div>
       <div className="flex flex-col items-center justify-center w-full">
         <p className="text-4xl sm:text-5xl font-bold text-center text-[#07075F] mb-10">
