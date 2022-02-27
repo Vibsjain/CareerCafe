@@ -3,7 +3,7 @@ import React from "react";
 export default function Aboutus() {
   const HomeImage = `https://res.cloudinary.com/dumgn8uvd/image/upload/v1644893552/careerCafeAboutUs_d0asf4.jpg`;
   return (
-    <div className="flex w-full justify-center items-center px-4">
+    <div className="flex w-full justify-center items-center px-4" id="about">
       <div className="justify-end w-full hidden sm:flex shadow-xl">
         <img src={HomeImage} className="rounded-2xl" />
       </div>
