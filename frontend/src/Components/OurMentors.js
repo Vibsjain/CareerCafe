@@ -58,6 +58,24 @@ export default function Mentors() {
         "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645981426/rpt_lidjmd.jpg",
       __v: 0,
     },
+    {
+      _id: "621bc1d2926d1bf7f94a7791",
+      name: "Aryan Dixit",
+      company: "Accolite Digital",
+      logo: "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645967440/accolite_ltzihm.png",
+      userImage:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645986238/ard_xsrhze.jpg",
+      __v: 0,
+    },
+    {
+      _id: "621bc21d926d1bf7f94a7793",
+      name: "Shweta Sinha",
+      company: "SAP Labs",
+      logo: "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645967440/SAP_ygfwad.png",
+      userImage:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645986305/sts_pmpjde.jpg",
+      __v: 0,
+    },
   ];
 
   const responsive = {
