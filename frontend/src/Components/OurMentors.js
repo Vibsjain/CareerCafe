@@ -110,14 +110,15 @@ export default function Mentors() {
           removeArrowOnDeviceType={["mobile"]}
           containerClass="carousel-container"
         >
-          {mentors.map((item, index) => {
-            <MentorCard
-              image={item.userImage}
-              mentorName={item.name}
-              mentorCompany={item.company}
-              cImage={item.logo}
-            />;
-          })}
+           {mentors.length > 0 &&
+            mentors.map((item, index) => 
+                <MentorCard
+                  image={item.userImage}
+                  mentorName={item.name}
+                  mentorCompany={item.company}
+                  cImage={item.logo}
+                />
+            )} 
         </Carousel>
       </div>
     </div>
