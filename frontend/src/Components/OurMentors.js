@@ -15,7 +15,7 @@ const MentorCard = (props) => {
         <img src={props.image} className="card-image images" alt="user" />
       </div>
       <div className="companyLogo">
-        <img src={props.cImage} className="h-full" />
+        <img src={props.cImage} className="h-full" className="w-28"/>
       </div>
       <div className="mentor-info flex flex-col w-full justify-center items-center gap-y-10">
         <h1 className="mentor-name text-2xl font-semibold">
