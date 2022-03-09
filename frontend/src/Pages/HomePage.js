@@ -21,7 +21,7 @@ export default function HomePage() {
       <NavComponent />
       <div className="w-full py-8 h-[100vh] flex flex-col-reverse md:flex-row">
         <div className="w-full md:w-7/12 flex flex-col justify-center items-center">
-          <h1 className="text-4xl md:text-6xl text-center font-semibold sm:font-bold">
+          <h1 className="text-4xl md:text-6xl text-center font-bold sm:font-bold">
             Let's Build Your{" "}
             <span className="font-semibold sm:font-bold text-[#eb924e]">
               Carrer

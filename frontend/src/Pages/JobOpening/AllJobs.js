@@ -42,6 +42,7 @@ export default function AllJobs() {
 
   useEffect(() => {
     getData();
+    window.scroll(0, 0);
   }, []);
 
   const history = useHistory();
