@@ -15,7 +15,7 @@ const MentorCard = (props) => {
         <img src={props.image} className="card-image images" alt="user" />
       </div>
       <div className="companyLogo">
-        <img src={props.cImage} className="h-full" className="w-28"/>
+        <img src={props.cImage} className="h-full w-28" />
       </div>
       <div className="mentor-info flex flex-col w-full justify-center items-center gap-y-10">
         <h1 className="mentor-name text-2xl font-semibold">
@@ -41,15 +41,6 @@ export default function Mentors() {
   // }, []);
   const mentors = [
     {
-      _id: "621bad9e926d1bf7f94a778a",
-      name: "Kulbir Singh",
-      company: "Quark",
-      logo: "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645967441/quark_f9tngz.png",
-      userImage:
-        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645980560/kbs_yjdooz.jpg",
-      __v: 0,
-    },
-    {
       _id: "621baf03926d1bf7f94a778c",
       name: "Preeti",
       company: "GoldmanSachs",
@@ -74,6 +65,15 @@ export default function Mentors() {
       logo: "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645967440/SAP_ygfwad.png",
       userImage:
         "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645986305/sts_pmpjde.jpg",
+      __v: 0,
+    },
+    {
+      _id: "621bad9e926d1bf7f94a778a",
+      name: "Kulbir Singh",
+      company: "Quark",
+      logo: "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645967441/quark_f9tngz.png",
+      userImage:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645980560/kbs_yjdooz.jpg",
       __v: 0,
     },
   ];
@@ -110,15 +110,15 @@ export default function Mentors() {
           removeArrowOnDeviceType={["mobile"]}
           containerClass="carousel-container"
         >
-           {mentors.length > 0 &&
-            mentors.map((item, index) => 
-                <MentorCard
-                  image={item.userImage}
-                  mentorName={item.name}
-                  mentorCompany={item.company}
-                  cImage={item.logo}
-                />
-            )} 
+          {mentors.length > 0 &&
+            mentors.map((item, index) => (
+              <MentorCard
+                image={item.userImage}
+                mentorName={item.name}
+                mentorCompany={item.company}
+                cImage={item.logo}
+              />
+            ))}
         </Carousel>
       </div>
     </div>
