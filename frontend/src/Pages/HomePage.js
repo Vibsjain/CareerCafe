@@ -15,7 +15,7 @@ export default function HomePage() {
   AOS.init({
     duration: 1000,
   });
-  const buttonClass = `text-white text-sm md:text-lg font-bold px-2 w-52 text-center mx-2 my-2 md:my-4 py-2 bg-[#462895] rounded-full`;
+  const buttonClass = `text-white text-sm md:text-lg font-bold px-2 w-52 text-center mx-2 my-2 md:my-4 py-2 bg-[#07075f] rounded-full`;
   return (
     <div>
       <NavComponent />
@@ -24,7 +24,7 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl text-center font-bold sm:font-bold">
             Let's Build Your{" "}
             <span className="font-semibold sm:font-bold text-[#eb924e]">
-              Carrer
+              Career
             </span>
           </h1>
           <div className="flex w-full flex-col md:flex-row justify-center items-center gap-x-4 my-4">

@@ -34,7 +34,7 @@ const Card = ({ item }) => {
 export default function AllJobs() {
   const [jobData, setJobData] = useState([]);
 
-  const getData = async () => {
+  const getData = async () => { 
     const res = await api.get("/joblist");
     setJobData(res.data);
     console.log(jobData);
@@ -42,20 +42,35 @@ export default function AllJobs() {
 
   useEffect(() => {
     getData();
-    window.scroll(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   const history = useHistory();
   const companyList = [
-    "Google",
-    "Microsoft",
+    "Deloitte",
+    "Amazon",
+    "American Express",
+    "Hashedin",
+    "Quark",
+    "Edifecs",
+    "Mediatek",
     "Adobe",
-    "Apple",
-    "Facebook",
-    "Netflix",
-    "LinkedIn",
-    "Twitter",
-    "Tower Research Capital",
+    "Accolite",
+    "Morgan Stanley",
+    "GoldmanSachs",
+    "TCS NQT",
+    "TCS Digital",
+    "Wipro",
+    "Samsung",
+    "Fareye",
+    "LTI",
+    "Capgemini",
+    "Cognizant",
+    "Accenture",
+    "KPMG",
+    "Band Y",
+    "INDUS VALLEY PARTNERS",
+    "Amdocs",
   ];
 
   const companyButton =

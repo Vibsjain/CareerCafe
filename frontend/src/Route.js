@@ -20,6 +20,7 @@ import CompanyInterviewExp from "./Pages/InterviewExperience/CompanyInterviewExp
 // Job Opening Routes
 import AllJobs from "./Pages/JobOpening/AllJobs";
 import JobDetails from "./Pages/JobOpening/JobDetails";
+import CompanyJobs from "./Pages/JobOpening/CompanyJobs";
 
 const FinalRoutes = () => {
   return (
@@ -63,6 +64,11 @@ const FinalRoutes = () => {
         />
         <Route path="/job/opening" exact component={AllJobs} />
         <Route path="/job/opening/:id" exact component={JobDetails} />
+        <Route
+          path="/job/opening/company/:companyName"
+          exact
+          component={CompanyJobs}
+        />
       </Switch>
     </BrowserRouter>
   );

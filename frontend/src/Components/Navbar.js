@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Assets/CSS/Navbar.css";
 import logo from "../Assets/Images/logo.png";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 export default function NavComponent() {
   const history = useHistory();
@@ -22,9 +22,11 @@ export default function NavComponent() {
           <li className="NavbarDropdown">
             <h1 onClick={() => history.push("/")}>Home</h1>
           </li>
-          <li className="NavbarDropdown">
-            <h1 onClick={() => history.push("/#courses")}>Placement Courses</h1>
-          </li>
+          <a href="/#courses">
+            <li className="NavbarDropdown">
+              <h1 onClick={() => history.push("/")}>Placement Courses</h1>
+            </li>
+          </a>
           {/* <li className="NavbarDropdown">
             <h1 onClick={() => history.push("/interview/experience")}>
               Interview Experience
@@ -63,14 +65,13 @@ export default function NavComponent() {
                 Home
               </h1>
             </li>
+
             <li>
-              <h1
-                className={`${textClass}`}
-                onClick={() => history.push("/#courses")}
-              >
-                Placement Courses
-              </h1>
+              <a href="/#courses">
+                <h1 className={`${textClass}`}>Placement Courses</h1>
+              </a>{" "}
             </li>
+
             {/* <li>
               <h1 className={`${textClass}`}>Interview Experience</h1>
             </li> */}
