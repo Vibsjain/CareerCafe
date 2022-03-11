@@ -59,6 +59,15 @@ export default function Mentors() {
       __v: 0,
     },
     {
+      _id: "621bad9e926d1bf7f94a578a",
+      name: "Ritik",
+      company: "Samsung",
+      logo: "https://images.samsung.com/is/image/samsung/assets/in/about-us/brand/logo/mo/360_197_1.png?$FB_TYPE_B_PNG$",
+      userImage:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647021659/ritik_egutkw.jpg",
+      __v: 0,
+    },
+    {
       _id: "621bc21d926d1bf7f94a7793",
       name: "Shweta Sinha",
       company: "SAP Labs",
@@ -76,6 +85,7 @@ export default function Mentors() {
         "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645980560/kbs_yjdooz.jpg",
       __v: 0,
     },
+    
   ];
 
   const responsive = {
