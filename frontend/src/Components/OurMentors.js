@@ -14,10 +14,17 @@ const MentorCard = (props) => {
       <div className="card-image">
         <img src={props.image} className="card-image images" alt="user" />
       </div>
+<<<<<<< HEAD
       {/* <div className="companyLogo">
         <img src={props.cImage} className="h-auto w-28"/>
   </div> */}
       <div className="mentor-info flex flex-col w-full justify-center items-center gap-y-2 py-4">
+=======
+      <div className="companyLogo">
+        <img src={props.cImage} className="h-full w-28" />
+      </div>
+      <div className="mentor-info flex flex-col w-full justify-center items-center gap-y-10">
+>>>>>>> e4bc5a6bbd7e3da6186c372877a7dc42d7087b59
         <h1 className="mentor-name text-2xl font-semibold">
           {props.mentorName}
         </h1>
@@ -41,15 +48,6 @@ export default function Mentors() {
   // }, []);
   const mentors = [
     {
-      _id: "621bad9e926d1bf7f94a778a",
-      name: "Kulbir Singh",
-      company: "Quark",
-      logo: "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645967441/quark_f9tngz.png",
-      userImage:
-        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645980560/kbs_yjdooz.jpg",
-      __v: 0,
-    },
-    {
       _id: "621baf03926d1bf7f94a778c",
       name: "Preeti",
       company: "GoldmanSachs",
@@ -68,6 +66,15 @@ export default function Mentors() {
       __v: 0,
     },
     {
+      _id: "621bad9e926d1bf7f94a578a",
+      name: "Ritik",
+      company: "Samsung",
+      logo: "https://images.samsung.com/is/image/samsung/assets/in/about-us/brand/logo/mo/360_197_1.png?$FB_TYPE_B_PNG$",
+      userImage:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647021659/ritik_egutkw.jpg",
+      __v: 0,
+    },
+    {
       _id: "621bc21d926d1bf7f94a7793",
       name: "Shweta Sinha",
       company: "SAP Labs",
@@ -76,6 +83,16 @@ export default function Mentors() {
         "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645986305/sts_pmpjde.jpg",
       __v: 0,
     },
+    {
+      _id: "621bad9e926d1bf7f94a778a",
+      name: "Kulbir Singh",
+      company: "Quark",
+      logo: "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645967441/quark_f9tngz.png",
+      userImage:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645980560/kbs_yjdooz.jpg",
+      __v: 0,
+    },
+    
   ];
 
   const responsive = {
@@ -110,15 +127,15 @@ export default function Mentors() {
           removeArrowOnDeviceType={["mobile"]}
           containerClass="carousel-container"
         >
-           {mentors.length > 0 &&
-            mentors.map((item, index) => 
-                <MentorCard
-                  image={item.userImage}
-                  mentorName={item.name}
-                  mentorCompany={item.company}
-                  cImage={item.logo}
-                />
-            )} 
+          {mentors.length > 0 &&
+            mentors.map((item, index) => (
+              <MentorCard
+                image={item.userImage}
+                mentorName={item.name}
+                mentorCompany={item.company}
+                cImage={item.logo}
+              />
+            ))}
         </Carousel>
       </div>
     </div>

@@ -5,6 +5,7 @@ import Facebook from "../Assets/Images/facebook.png";
 import Telegram from "../Assets/Images/telegram.png";
 import api from "../api/index";
 import { useHistory } from "react-router-dom";
+import { MailFilled, HomeFilled } from "@ant-design/icons";
 
 export default function Footer() {
   const history = useHistory();
@@ -29,7 +30,7 @@ export default function Footer() {
 
   return (
     <div
-      className="p-6 bg-gray-800 flex flex-row justify-center items-center"
+      className="p-6 bg-gray-800 flex flex-col justify-center items-center"
       id="contact"
     >
       <div className="mb-4 flex flex-col md:flex-row sm:flex-col justify-center items-center w-full">
@@ -112,7 +113,10 @@ export default function Footer() {
                   href="#"
                   className="text-gray-300 text-[20px] hover:text-gray-400"
                 >
-                 <h1 onClick={() => history.push("/job/opening")}> Latest Hirings</h1>
+                  <h1 onClick={() => history.push("/job/opening")}>
+                    {" "}
+                    Latest Hirings
+                  </h1>
                 </a>
               </li>
             </ul>
@@ -150,6 +154,21 @@ export default function Footer() {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="w-10/12">
+        <br />
+        <hr />
+        <br />
+        <div className="w-full flex justify-center items-center">
+          <MailFilled style={{ color: "white", fontSize: "20px" }} />
+          <h1 className="text-white text-xl">&nbsp; : contact@careercafe.io</h1>
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <HomeFilled style={{ color: "white", fontSize: "20px" }} />
+          <h1 className="text-white text-xl">
+            &nbsp; : Sco 76, Sector 15D, Chandigarh Pin - 160015
+          </h1>
         </div>
       </div>
     </div>
