@@ -53,6 +53,17 @@ export default function Students() {
   const studentData = [
     {
       _id: "621ba85e926d1bf7f94a7770",
+      name: "Anjali Bhardwaj",
+      company: "Mediatek",
+      image:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647022348/anjali_vknseo.jpg",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/MediaTek_logo.svg/1280px-MediaTek_logo.svg.png",
+      testimonial:
+        "I am very thankful to Amit Sir and career café team for their continuous support and motivation which gave me the confidence to achieve my dream job. DSA classes,  Regular tests and mock interviews  played a major role, as they enhanced my knowledge, strengthened my concepts, boosted up my confidence as well as made me realize my mistakes .",
+      __v: 0,
+    },
+    {
+      _id: "621ba85e926d1bf7f94a7770",
       name: "Aditya Garg",
       company: "Josh Technology",
       image:
