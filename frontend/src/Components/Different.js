@@ -21,13 +21,13 @@ export default function Different() {
           else is rooting for.
         </p>
         <p className="text-xl font-bold mb-2 mt-2 bg-[#B2BFC8] p-2 rounded-3xl px-4 w-1/2">
-          Post Placement Support
+          Off Campus Assistance
         </p>
         <p className=" text-md sm:text-xl font-bold mb-2 text-justify mt-4 sm:mt-0">
-          Students once mentored at career café remains our student forever and
-          is free to take expert guidance from our mentors at any point in ones
-          career. Whether it's regarding switching any company or for referrals
-          through our network or any new career move.
+          Not all company hires through campus placements.
+          So if your college doesn’t have good placement opportunities or you missed the
+          opportunity in college or want to explore more options, we are always there to assist you with
+          all latest off campus hirings and referrals.
         </p>
       </div>
       <div className="justify-end w-full hidden sm:flex">

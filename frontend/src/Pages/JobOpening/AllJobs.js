@@ -8,15 +8,15 @@ import Footer from "../../Components/Footer";
 const Card = ({ item }) => {
   const history = useHistory();
   const companyButton =
-    "my-5 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
+    "mb-2 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
   return (
     <div>
-      <div className="border-2 border-[#07075f] flex flex-col md:flex-row rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)] my-20 w-3/4 mx-auto flex flex-wrap justify-center items-center">
+      <div className="border border-[#07075f] flex md:flex-row rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)] my-10 w-auto mx-10 flex flex-wrap justify-center items-center">
         <div className="w-full md:w-3/12 flex justify-center items-center">
-          <img src={item.logo} className="w-28 md:w-40 h-28 md:h-40" />
+          <img src={item.logo} className="w-14 md:w-20 h-14 md:h-20" />
         </div>
-        <div className="flex justify-center items-center w-full md:w-2/3 flex-col px-4">
-          <h1 className="py-5 text-3xl md:text-5xl text-center text-black font-bold mt-4">
+        <div className="flex justify-center items-center w-full md:w-2/3 px-4">
+          <h1 className="py-5 text-xl md:text-3xl text-center text-black font-bold mt-2">
             {item.company} - {item.title}
           </h1>
           <button
@@ -93,7 +93,7 @@ export default function AllJobs() {
           Job Openings
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center mt-10 mb-24">
+      {/*<div className="flex flex-col justify-center items-center mt-10 mb-24">
         <p className="text-2xl font-bold text-center">
           Company Specific Openings
         </p>
@@ -107,7 +107,7 @@ export default function AllJobs() {
             </button>
           ))}
         </div>
-      </div>
+      </div> */}
       {jobData && jobData.length > 0 ? (
         jobData.map((value) => <Card item={value} />)
       ) : (

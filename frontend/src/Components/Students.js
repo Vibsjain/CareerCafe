@@ -7,22 +7,27 @@ import "../Assets/CSS/Mentors.css";
 import "../Assets/CSS/Common.css";
 import api from "../api/index";
 
+// border-[#63B3ED]
+
 const StudentCard = (props) => {
   return (
-    <div className="flex flex-col w-[22rem] min-h-[22rem] justify-center items-center mt-[20%] border-4 border-[#63B3ED] bg-[#1A202C] shadow-2xl">
+    <div className="flex flex-col w-[22rem] min-h-[20rem] justify-center items-center mt-[20%] border-4  bg-[#1A202C] shadow-2xl rounded-3xl">
       <img
         src={props.image}
         alt="student"
-        className="absolute w-32 h-32 top-0 rounded-full border-4 border-[#63B3ED]"
+        className="absolute w-32 h-32 top-4 rounded-full border-4 border-[#63B3ED]"
       />
       <div className="flex flex-col justify-between items-center pt-[6rem] pb-8 h-full gap-y-2">
+        <div className="text-center">
+          
         <h1 className="text-3xl font-semibold text-[#7F9CF5]">{props.name}</h1>
         <h1 className="text-sm font-normal text-white">
           Placed at {props.company}
         </h1>
-        <h1 className="text-sm font-normal text-white px-4 text-justify">
+        <h1 className="mt-4 text-sm font-normal text-white px-4 text-justify">
           {props.testimonial}
         </h1>
+        </div>
         {/* <img src={props.cImage} alt="company" className="w-16 py-2"></img> */}
       </div>
     </div>
@@ -76,7 +81,7 @@ export default function Students() {
     {
       _id: "621ba7a2926d1bf7f94a776c",
       name: "Sizman Kaur",
-      company: "Vitusa",
+      company: "Amdocs",
       image:
         "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645971145/szk_izcojx.jpg",
       logo: "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/px8dkptpqet9hrjqupqc",

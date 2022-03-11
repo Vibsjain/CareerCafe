@@ -14,10 +14,10 @@ const MentorCard = (props) => {
       <div className="card-image">
         <img src={props.image} className="card-image images" alt="user" />
       </div>
-      <div className="companyLogo">
-        <img src={props.cImage} className="h-full" className="w-28"/>
-      </div>
-      <div className="mentor-info flex flex-col w-full justify-center items-center gap-y-10">
+      {/* <div className="companyLogo">
+        <img src={props.cImage} className="h-auto w-28"/>
+  </div> */}
+      <div className="mentor-info flex flex-col w-full justify-center items-center gap-y-2 py-4">
         <h1 className="mentor-name text-2xl font-semibold">
           {props.mentorName}
         </h1>
