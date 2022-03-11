@@ -64,6 +64,17 @@ export default function Students() {
     },
     {
       _id: "621ba85e926d1bf7f94a7770",
+      name: "Sourav",
+      company: "Mediatek",
+      image:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647022648/soruav_rdafrs.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/MediaTek_logo.svg/1280px-MediaTek_logo.svg.png",
+      testimonial:
+        "Career café team was  always up to clear my doubts and gradually I started becoming technically sound. They guided us how to how to handle face to face interviews. They give me life time confidence and ability to achieve more in my life.",
+      __v: 0,
+    },
+    {
+      _id: "621ba85e926d1bf7f94a7770",
       name: "Aditya Garg",
       company: "Josh Technology",
       image:
@@ -71,6 +82,50 @@ export default function Students() {
       logo: "https://media-exp1.licdn.com/dms/image/C510BAQG3WmeuIgcgxg/company-logo_200_200/0/1554095047041?e=2159024400&v=beta&t=mYNZz-TEVqOIScEpk07cyJklwm6-tLzLuFhwtgKseyQ",
       testimonial:
         "Best thing of joining career café  is that they will  make your data structure strong which will help u to get placed in good product based  companies, they also conducted regular mock interviews and guided how to tackle those interviewer’s questions and because  of that only i got placed in Josh technology. Also they provided me company specific technical mocks which was really helpful in the end.",
+      __v: 0,
+    },
+    {
+      _id: "621ba85e926d1bf7f94a7770",
+      name: "Somesh Khatri",
+      company: "Nagarro",
+      image:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647022959/somesh_rodz5o.jpg",
+      logo: "https://surveys.nagarro.com/CustomerSatisfactionSurvey/Images/Nagarro%20Horizontal%20Dark.png",
+      testimonial:
+        "Before CareerCafé, I wasn't sure whether I would be able to crack a job interview. But after joining CareerCafé a direction was given to my preparation by Amit Sir and team. Constant guidance about topics like DSA, Quant, Puzzles, concept of OOPs as well periodic interviews provided exposure needed to not be nervous at the moment that would count. In the end I was able to crack many interviews.",
+      __v: 0,
+    },
+    {
+      _id: "621ba85e926d1bf7f94a7770",
+      name: "Yashika Dhingra",
+      company: "Deloitte",
+      image:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647023068/yahsika_twzapg.jpg",
+      logo: "https://logos-world.net/wp-content/uploads/2021/08/Deloitte-Logo.png",
+      testimonial:
+        "Career Cafe has helped me to land into the job that matches  my skills. I learnt from Career Cafe that no matter where others are going, you need to understand your own strengths and work accordingly. This really helped me a lot.",
+      __v: 0,
+    },
+    {
+      _id: "621ba85e926d1bf7f94a7770",
+      name: "Sonali Justa",
+      company: "Mediatek",
+      image:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647023683/sonali_cvmcte.jpg",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/MediaTek_logo.svg/1280px-MediaTek_logo.svg.png",
+      testimonial:
+        "I would like to thank whole Career Cafe team and especially Amit Sir for allowing me the opportunity to expand my career and skills through their classes. DS and Aptitude class was surely a great help. But most importantly the mock interviews were the best part about the whole course. It provided me a guidance, confidence and helped me a lot in my interviews. Another important factor, the positive attitude that many students loose while preparing for companies, is something I received from Career Cafe. With all the support and guidance I managed to crack the first company(Mediatek) that I was sitting for. Career Cafe classes definitely helped me to start my career with one of the best companies worldwide.",
+      __v: 0,
+    },
+    {
+      _id: "621ba85e926d1bf7f94a7770",
+      name: "Ishita Jindal",
+      company: "Indus Valley",
+      image:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647023852/ishita_ms4slb.jpg",
+      logo: "https://m.media-amazon.com/images/S/aplus-media/sc/60c3f180-2fa6-47bf-9b26-80d49b884a50.__CR0,0,600,180_PT0_SX600_V1___.jpg",
+      testimonial:
+        "My coding skills improved a lot at career café.   Regular tests and mock interviews also helped me a lot.Their teaching methods are unique in their own way , plus the syllabus is also designed in a pattern that it covers all major companies ",
       __v: 0,
     },
     {
@@ -115,6 +170,17 @@ export default function Students() {
       logo: "https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/CognizantLogo400.jpg",
       testimonial:
         "From having coding fear to successfully to successfully clearing coding rounds of various companies, all credit goes to career café. I got constant support from them throughout my placement journey.",
+      __v: 0,
+    },
+    {
+      _id: "621ba8b9926d1bf7f94a7772",
+      name: "Samiksha Kansal",
+      company: "Deloitte",
+      image:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647023949/samiksha_dufv7p.jpg",
+      logo: "https://logos-world.net/wp-content/uploads/2021/08/Deloitte-Logo.png",
+      testimonial:
+        "The company specific practice modules and notes which were provided to us were concise and very informative and helped me in cracking deloitte.",
       __v: 0,
     },
     {
