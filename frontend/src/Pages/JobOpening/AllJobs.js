@@ -8,27 +8,27 @@ import Footer from "../../Components/Footer";
 const Card = ({ item }) => {
   const history = useHistory();
   const companyButton =
-    "mb-2 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
+    "mb-2 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white pt-[1.2rem] pb-[1rem] my-2 px-4 border border-[#07075f] hover:border-transparent rounded-tr-3xl rounded-br-3xl";
+  const cardClass = `border border-[#07075f] flex md:flex-row rounded-tl-3xl rounded-bl-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)] my-10 w-full ml-10 flex flex-wrap justify-left items-center`;
   return (
-    <div>
-      <div className="border border-[#07075f] flex md:flex-row rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)] my-10 w-auto mx-10 flex flex-wrap justify-between items-center">
+    <div className="flex w-full pl-8 pr-16">
+      <div className={cardClass}>
         <div className="mx-4 flex justify-center items-center">
           <img src={item.logo} className="w-14 md:w-20 h-14 md:h-20" />
         </div>
         <div className="mx-4 flex justify-center items-center">
-          <h1 className="py-5 text-xl md:text-3xl text-center text-black font-bold mt-2">
+          <h1 className="py-5 pl-[5rem] text-xl md:text-3xl text-center text-black font-bold mt-2">
             {item.company} - {item.title}
           </h1>
-          
         </div>
-        <div className="mx-4 flex justify-center items-center">
+      </div>
+      <div className=" flex justify-center items-center">
         <button
-            className={companyButton}
-            onClick={() => history.push("/job/opening/" + item._id)}
-          >
-            Read More
-          </button>
-        </div>
+          className={companyButton}
+          onClick={() => history.push("/job/opening/" + item._id)}
+        >
+          Read More
+        </button>
       </div>
     </div>
   );
@@ -37,7 +37,7 @@ const Card = ({ item }) => {
 export default function AllJobs() {
   const [jobData, setJobData] = useState([]);
 
-  const getData = async () => { 
+  const getData = async () => {
     const res = await api.get("/joblist");
     setJobData(res.data);
     console.log(jobData);
