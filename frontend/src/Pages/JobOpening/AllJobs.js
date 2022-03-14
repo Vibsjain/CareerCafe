@@ -11,15 +11,18 @@ const Card = ({ item }) => {
     "mb-2 bg-transparent hover:bg-[#07075f] text-[#07075f] font-semibold hover:text-white py-2 px-4 border border-[#07075f] hover:border-transparent rounded mx-4";
   return (
     <div>
-      <div className="border border-[#07075f] flex md:flex-row rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)] my-10 w-auto mx-10 flex flex-wrap justify-center items-center">
-        <div className="w-full md:w-3/12 flex justify-center items-center">
+      <div className="border border-[#07075f] flex md:flex-row rounded-3xl shadow-[0_30px_40px_-25px_rgba(0,0,0,0.3)] my-10 w-auto mx-10 flex flex-wrap justify-between items-center">
+        <div className="mx-4 flex justify-center items-center">
           <img src={item.logo} className="w-14 md:w-20 h-14 md:h-20" />
         </div>
-        <div className="flex justify-center items-center w-full md:w-2/3 px-4">
+        <div className="mx-4 flex justify-center items-center">
           <h1 className="py-5 text-xl md:text-3xl text-center text-black font-bold mt-2">
             {item.company} - {item.title}
           </h1>
-          <button
+          
+        </div>
+        <div className="mx-4 flex justify-center items-center">
+        <button
             className={companyButton}
             onClick={() => history.push("/job/opening/" + item._id)}
           >
