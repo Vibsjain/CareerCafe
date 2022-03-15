@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Assets/CSS/Navbar.css";
 import logo from "../Assets/Images/logo.png";
+import logo2 from "../Assets/Images/shortLogo.jpeg";
 import { useHistory, Link } from "react-router-dom";
 
 export default function NavComponent() {
@@ -13,9 +14,16 @@ export default function NavComponent() {
         <a>
           <img
             onClick={() => history.push("/")}
-            className="NavbarLogo cursor-pointer"
+            className="NavbarLogo cursor-pointer hidden md:flex"
             src={logo}
             alt=""
+          />
+          <img
+            onClick={() => history.push("/")}
+            className="NavbarLogo cursor-pointer flex md:hidden w-24 h-24"
+            src={logo2}
+            alt=""
+            style={{ width: "70px" }}
           />
         </a>
         <ul className="NavbarLinks">
