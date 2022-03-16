@@ -85,7 +85,24 @@ export default function Mentors() {
         "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645980560/kbs_yjdooz.jpg",
       __v: 0,
     },
-    
+    {
+      _id: "621bad9e926d1bf7f94a778a",
+      name: "Amit Singh",
+      company: "Co - Founder Carrer Cafe",
+      logo: "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645967441/quark_f9tngz.png",
+      userImage:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647412919/amit_wgjd0v.jpg",
+      __v: 0,
+    },
+    {
+      _id: "621bad9e926d1bf7f94a778a",
+      name: "Jayant Dhawan",
+      company: "Full stack Developer",
+      logo: "https://res.cloudinary.com/dumgn8uvd/image/upload/v1645967441/quark_f9tngz.png",
+      userImage:
+        "https://res.cloudinary.com/dumgn8uvd/image/upload/v1647413023/jayant_zgdrth.jpg",
+      __v: 0,
+    },
   ];
 
   const responsive = {

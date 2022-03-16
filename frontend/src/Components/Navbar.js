@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Assets/CSS/Navbar.css";
-import logo from "../Assets/Images/logo.png";
+import logo from "../Assets/Images/logo1.png";
 import logo2 from "../Assets/Images/shortLogo.jpeg";
 import { useHistory, Link } from "react-router-dom";
 
